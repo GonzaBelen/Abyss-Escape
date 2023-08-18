@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,6 +21,12 @@ public class Player : MonoBehaviour
     public float inmuneTime = 0.5f;
 
     public LayerMask groundLayer;
+
+    internal void RecibirDaño(int damage)
+    {
+        throw new NotImplementedException();
+    }
+
     public float radius = 0.3f;
     public float groundRayDist = 0.5f;
 
@@ -56,6 +63,8 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
             jump();
+
+        flip(movHor);
     }
 
     void FixedUpdate()
@@ -71,6 +80,18 @@ public class Player : MonoBehaviour
         if (!isGround) return;
 
         rb.velocity = Vector2.up * jumpForce;
+    }
+
+    void flip(float _xValue)
+    {
+        Vector3 theScale = transform.localScale;
+        if (_xValue < 0)
+            theScale.x = Mathf.Abs(theScale.x) * -1;
+        else
+        if (_xValue > 0)
+            theScale.x = Mathf.Abs(theScale.x);
+
+        transform.localScale = theScale;
     }
     void OnDestroy()
     {
