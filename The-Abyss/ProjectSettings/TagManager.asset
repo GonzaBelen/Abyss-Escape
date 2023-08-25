@@ -3,19 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Enemy
-  - Rock
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - Ground
-  - Player
-  - Rock
+  - Grapplable
+  - 
+  - 
   - 
   - 
   - 

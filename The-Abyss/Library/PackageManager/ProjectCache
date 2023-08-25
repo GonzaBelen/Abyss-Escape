@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638278036668479389
-    m_Hash: 2030354091
+      ticks: 638285080450216165
+    m_Hash: 1513670073
   m_LockFileStatus:
     m_FilePath: C:/Users/Pedro/Desktop/TP Taller/The-Abyss/The-Abyss/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638278036668479389
-    m_Hash: 2680633138
+      ticks: 638285080450296233
+    m_Hash: 161984917
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -528,6 +528,7 @@ m_ResolvedPackages:
     - 1.3.5
     - 1.3.7
     - 1.3.8
+    - 1.3.9
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -542,6 +543,7 @@ m_ResolvedPackages:
     - 1.3.5
     - 1.3.7
     - 1.3.8
+    - 1.3.9
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -997,102 +999,6 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-- packageId: com.unity.visualscripting@1.8.0
-  testable: 0
-  isDirectDependency: 1
-  version: 1.8.0
-  source: 1
-  resolvedPath: C:\Users\Pedro\Desktop\TP Taller\The-Abyss\The-Abyss\Library\PackageCache\com.unity.visualscripting@1.8.0
-  assetPath: Packages/com.unity.visualscripting
-  name: com.unity.visualscripting
-  displayName: Visual Scripting
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: tool
-  description: 'Visual scripting is a workflow that uses visual, node-based graphs
-    to design behaviors rather than write lines of C# script.
-
-
-    Enabling artists,
-    designers and programmers alike, visual scripting can be used to design final
-    logic, quickly create prototypes, iterate on gameplay and create custom nodes
-    to help streamline collaboration.
-
-
-    Visual scripting is compatible with third-party
-    APIs, including most packages, assets and custom libraries.'
-  status: 0
-  errors: []
-  versions:
-    all:
-    - 1.5.0
-    - 1.5.1-pre.3
-    - 1.5.1-pre.5
-    - 1.5.1
-    - 1.5.2
-    - 1.6.0-pre.3
-    - 1.6.0
-    - 1.6.1
-    - 1.7.1
-    - 1.7.2
-    - 1.7.3
-    - 1.7.5
-    - 1.7.6
-    - 1.7.7
-    - 1.7.8
-    - 1.8.0-pre.1
-    - 1.8.0
-    - 1.9.0
-    compatible:
-    - 1.8.0
-    - 1.9.0
-    recommended: 1.8.0
-    deprecated:
-    - 1.8.0-pre.1
-  dependencies:
-  - name: com.unity.ugui
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.ugui
-    version: 1.0.0
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638060044680000000
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.visualscripting.git
-    revision: 0de66378b19e990494d98f39ecc2b6aa5ac65351
-    path: 
-  unityLifecycle:
-    version: 1.8.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
