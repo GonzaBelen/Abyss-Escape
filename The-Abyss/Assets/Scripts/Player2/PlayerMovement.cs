@@ -28,8 +28,15 @@ public class PlayerMovement : MonoBehaviour
     private float runVelocity;
     //private bool isRunning = false;
 
+    [Header("Respawn")]
+    Vector3 StartPoint;
+    
+    [SerializeField] private Transform[] respawns;
+
+
     private void Start()
     {
+        StartPoint = respawns[0].position;
         rb2D = GetComponent<Rigidbody2D>();
         gh = GetComponent<GrappleHook>();
         runVelocity = movementVelocity * 2;
@@ -107,5 +114,37 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.DrawWireCube(groundController.position, boxDimensions);
     }
 
-  
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.gameObject.CompareTag("Finish"))
+        {
+            //Destroy(this.gameObject);
+            transform.position = StartPoint;
+        }
+
+        if (collider.gameObject.CompareTag("Finish2"))
+        {
+            //Destroy(this.gameObject);
+            StartPoint = respawns[1].position;
+            transform.position = StartPoint;
+        }
+
+        if (collider.gameObject.CompareTag("Finish3"))
+        {
+            //Destroy(this.gameObject);
+            StartPoint = respawns[2].position;
+            transform.position = StartPoint;
+        }
+
+        if (collider.gameObject.CompareTag("Finish4"))
+        {
+            //Destroy(this.gameObject);
+            StartPoint = respawns[3].position;
+            transform.position = StartPoint;
+        }
+
+    }
+
+
+
 }
