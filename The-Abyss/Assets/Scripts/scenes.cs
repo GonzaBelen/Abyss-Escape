@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class scenes : MonoBehaviour
+public class Scenes : MonoBehaviour
 {
     [SerializeField] private GameObject[] cameras;
     [SerializeField] private GameObject[] changePoint;
