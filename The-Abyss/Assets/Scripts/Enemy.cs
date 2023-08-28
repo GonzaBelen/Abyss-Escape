@@ -15,9 +15,8 @@ public class Enemy : MonoBehaviour
         [SerializeField] private int damage;
 
     [Header("Ground")]
-        [SerializeField] private Transform controlGround;
+        [SerializeField] private Transform controlGround; 
 
-  
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -45,14 +44,6 @@ public class Enemy : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawLine(controlGround.transform.position, controlGround.transform.position + Vector3.down * distance);
-    }
-
-   void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            Destroy(collision.gameObject);
-        }
     }
 
 }

@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Movement")]
     [SerializeField] private float movementVelocity;
-    [Range(0, 0.3f)][SerializeField] private float movementSoft;
+    [Range(0, 0.3f)] [SerializeField] private float movementSoft;
     private float actualVelocity;
     private float movementHor = 0;
     private Vector3 velocity = Vector3.zero;
@@ -33,10 +33,9 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private Transform[] respawns;
 
-    [Header ("Animation")]
+    [Header("Animation")]
     private Animator animator;
-    
-   
+
 
 
     private void Start()
@@ -53,13 +52,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift)) 
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             actualVelocity = runVelocity;
             actualJumpForce = jumpForce * 1.5f;
             rb2D.gravityScale = 4.0f;
         }
-        if (Input.GetKeyUp(KeyCode.LeftShift)) 
+        if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             actualVelocity = movementVelocity;
             actualJumpForce = jumpForce;
@@ -70,7 +69,8 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("Horizontal", Mathf.Abs(movementHor));
 
-        if (Input.GetButtonDown("Jump")) {
+        if (Input.GetButtonDown("Jump"))
+        {
             jump = true;
         }
     }
@@ -79,7 +79,8 @@ public class PlayerMovement : MonoBehaviour
     {
         grounded = Physics2D.OverlapBox(groundController.position, boxDimensions, 0f, whatIsGround);
 
-        if (!gh.retracting){
+        if (!gh.retracting)
+        {
 
             Move(movementHor * Time.fixedDeltaTime, jump);
         }
@@ -87,23 +88,26 @@ public class PlayerMovement : MonoBehaviour
         {
             rb2D.velocity = Vector2.zero;
         }
-        
+
         jump = false;
     }
-    
+
     private void Move(float move, bool jump)
     {
         Vector3 objectiveVel = new Vector2(move, rb2D.velocity.y);
         rb2D.velocity = Vector3.SmoothDamp(rb2D.velocity, objectiveVel, ref velocity, movementSoft);
 
-        if (move > 0 && !lokingRight){
+        if (move > 0 && !lokingRight)
+        {
             Flip();
         }
-        else if (move <0 && lokingRight){
+        else if (move < 0 && lokingRight)
+        {
             Flip();
         }
 
-        if (grounded && jump){
+        if (grounded && jump)
+        {
             grounded = false;
             rb2D.AddForce(new Vector2(0f, actualJumpForce));
         }
@@ -152,5 +156,21 @@ public class PlayerMovement : MonoBehaviour
             transform.position = startPoint;
         }
 
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            this.gameObject.SetActive(false);
+            startPoint = respawns[3].position;
+            transform.position = startPoint;
+
+            Invoke("Delay", 0.5f);
+        }
+    }
+    private void Delay()
+    {
+        this.gameObject.SetActive(true);
     }
 }

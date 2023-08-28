@@ -58,14 +58,13 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.6f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\MoveEnemy.cs" />
-    <Compile Include="Assets\Scripts\Controler Player.cs" />
-    <Compile Include="Assets\Scripts\scenes.cs" />
-    <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Scripts\DestruirRoca.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Scripts\Player2\GrappleHook.cs" />
-    <Compile Include="Assets\Scripts\Player2\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Scenes.cs" />
+    <Compile Include="Assets\Scripts\Controls.cs" />
+    <Compile Include="Assets\Scripts\GrappleHook.cs" />
+    <Compile Include="Assets\Scripts\DestroyRock.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\SwitchScene.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

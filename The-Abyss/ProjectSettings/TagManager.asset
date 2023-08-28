@@ -8,6 +8,9 @@ TagManager:
   - Finish2
   - Finish3
   - Finish4
+  - Enemy
+  - Box
+  - End
   layers:
   - Default
   - TransparentFX
