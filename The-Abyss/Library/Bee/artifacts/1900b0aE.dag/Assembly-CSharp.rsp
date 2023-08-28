@@ -369,7 +369,6 @@
 "Assets/Scripts/DestroyRock.cs"
 "Assets/Scripts/Enemy.cs"
 "Assets/Scripts/GrappleHook.cs"
-"Assets/Scripts/MoveEnemy.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/Scenes.cs"
 -langversion:9.0

@@ -30,8 +30,13 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Respawn")]
     Vector3 startPoint;
-    
+
     [SerializeField] private Transform[] respawns;
+
+    [Header ("Animation")]
+    private Animator animator;
+    
+   
 
 
     private void Start()
@@ -42,6 +47,8 @@ public class PlayerMovement : MonoBehaviour
         runVelocity = movementVelocity * 2;
         actualVelocity = movementVelocity;
         actualJumpForce = jumpForce;
+
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -60,6 +67,8 @@ public class PlayerMovement : MonoBehaviour
         }
 
         movementHor = Input.GetAxisRaw("Horizontal") * actualVelocity;
+
+        animator.SetFloat("Horizontal", Mathf.Abs(movementHor));
 
         if (Input.GetButtonDown("Jump")) {
             jump = true;
