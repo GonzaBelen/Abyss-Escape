@@ -11,8 +11,8 @@ public class GrappleHook : MonoBehaviour
     [SerializeField] float grappleSpeed = 10f;
     [SerializeField] float grappleShootSpeed = 20f;
 
-    bool isGrappling = false;
     [HideInInspector] public bool retracting = false;
+    bool isGrappling = false;
 
     Vector2 target;
 
@@ -20,19 +20,16 @@ public class GrappleHook : MonoBehaviour
     {
         line = GetComponent<LineRenderer>();
     }
+    
     private void Update()
     {
         if (Input.GetMouseButtonDown(0) && !isGrappling)
         {
-            Debug.Log("holiwis");
-
             StartGrapple();
         }
 
         if (retracting)
         {
-            Debug.Log("sos re puto3");
-
             Vector2 grapplePos = Vector2.Lerp(transform.position, target, grappleSpeed * Time.deltaTime);
 
             transform.position = grapplePos;
@@ -47,6 +44,7 @@ public class GrappleHook : MonoBehaviour
             }
         }
     }
+
     private void StartGrapple()
     {
         Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
@@ -69,8 +67,6 @@ public class GrappleHook : MonoBehaviour
         float t = 0;
         float time = 10;
 
-        Debug.Log("sos re puto");
-
         line.SetPosition(0, transform.position);
         line.SetPosition(1, transform.position);
 
@@ -86,9 +82,5 @@ public class GrappleHook : MonoBehaviour
 
         line.SetPosition(1, target);
         retracting = true;
-
-        Debug.Log("sos re puto2");
-    }
-
-   
+    }   
 }

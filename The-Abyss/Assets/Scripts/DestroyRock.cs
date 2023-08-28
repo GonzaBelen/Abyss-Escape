@@ -5,8 +5,8 @@ using UnityEngine;
 public class DestroyRock : MonoBehaviour
 {
     
-    public float radioHit  = 1.15f; 
-    public KeyCode buttonHit = KeyCode.E; 
+    [SerializeField] private float radioHit  = 1.15f; 
+    [SerializeField] private KeyCode buttonHit = KeyCode.E; 
 
     private void Update()
     {
