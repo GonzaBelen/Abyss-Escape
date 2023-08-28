@@ -3,15 +3,23 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Rock
+  - Finish2
+  - Finish3
+  - Finish4
+  - Enemy
+  - Box
+  - End
+  - Box2
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - 
+  - Grapplable
   - 
   - 
   - 
