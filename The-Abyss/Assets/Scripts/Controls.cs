@@ -44,10 +44,7 @@ public class Controls : MonoBehaviour
             controls[4].SetActive(true);
         }
 
-        if (Input.GetMouseButtonDown(0) && controls[4] == true)
-        {
-            Destroy(controls[4]);
-        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -55,6 +52,11 @@ public class Controls : MonoBehaviour
         if (collider.gameObject.CompareTag("Box"))
         {
             camera2 = true;
+        }
+
+        if (collider.gameObject.CompareTag("Box2"))
+        {
+            Destroy(controls[4]);
         }
 
     }
