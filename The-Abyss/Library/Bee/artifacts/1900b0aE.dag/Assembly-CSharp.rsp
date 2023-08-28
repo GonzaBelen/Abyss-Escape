@@ -371,7 +371,7 @@
 "Assets/Scripts/Enemy.cs"
 "Assets/Scripts/GrappleHook.cs"
 "Assets/Scripts/PlayerMovement.cs"
-"Assets/Scripts/Scenes.cs"
+"Assets/Scripts/scenes.cs"
 "Assets/Scripts/SwitchScene.cs"
 -langversion:9.0
 
