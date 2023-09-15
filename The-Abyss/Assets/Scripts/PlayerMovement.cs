@@ -25,9 +25,9 @@ public class PlayerMovement : MonoBehaviour
     private bool jump = false;
 
     [Header("Run")]
+    private bool releasedShiftInAir = false;
     private float runVelocity;
-    //private bool isRunning = false;
-
+    
     [Header("Respawn")]
     Vector3 startPoint;
 
@@ -52,17 +52,25 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.LeftShift) && grounded == true)
         {
             actualVelocity = runVelocity;
-            actualJumpForce = jumpForce * 1.5f;
-            rb2D.gravityScale = 4.0f;
+            if (jump == true)
+            {
+                RunJump();
+            }
         }
+
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            actualVelocity = movementVelocity;
-            actualJumpForce = jumpForce;
-            rb2D.gravityScale = 2.35f;
+            if (!grounded)
+            {
+                releasedShiftInAir = true;
+            }
+            else
+            {
+                StopRun();
+            }
         }
 
         movementHor = Input.GetAxisRaw("Horizontal") * actualVelocity;
@@ -72,6 +80,12 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
+        }
+
+        if (grounded && releasedShiftInAir)
+        {
+            StopRun();
+            releasedShiftInAir = false;
         }
     }
 
@@ -111,6 +125,20 @@ public class PlayerMovement : MonoBehaviour
             grounded = false;
             rb2D.AddForce(new Vector2(0f, actualJumpForce));
         }
+    }
+
+    private void RunJump()
+    {
+        actualVelocity = runVelocity;
+        actualJumpForce = jumpForce * 1.5f;
+        rb2D.gravityScale = 4.0f;
+    }
+
+    private void StopRun()
+    {
+        actualVelocity = movementVelocity;
+        actualJumpForce = jumpForce;
+        rb2D.gravityScale = 2.35f;
     }
 
     private void Flip()
