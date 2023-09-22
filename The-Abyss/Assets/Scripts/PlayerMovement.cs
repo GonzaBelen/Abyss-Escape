@@ -30,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
     
     [Header("Respawn")]
     Vector3 startPoint;
+    private GrappleHook grappleHook;
 
     [SerializeField] private Transform[] respawns;
 
@@ -48,6 +49,8 @@ public class PlayerMovement : MonoBehaviour
         actualJumpForce = jumpForce;
 
         animator = GetComponent<Animator>();
+
+        grappleHook = GetComponent<GrappleHook>();
     }
 
     private void Update()
@@ -161,6 +164,7 @@ public class PlayerMovement : MonoBehaviour
         {
             //Destroy(this.gameObject);
             transform.position = startPoint;
+            grappleHook.ResetGrapple();
         }
 
         if (collider.gameObject.CompareTag("Finish2"))
@@ -168,6 +172,7 @@ public class PlayerMovement : MonoBehaviour
             //Destroy(this.gameObject);
             startPoint = respawns[1].position;
             transform.position = startPoint;
+            grappleHook.ResetGrapple();
         }
 
         if (collider.gameObject.CompareTag("Finish3"))
@@ -175,6 +180,7 @@ public class PlayerMovement : MonoBehaviour
             //Destroy(this.gameObject);
             startPoint = respawns[2].position;
             transform.position = startPoint;
+            grappleHook.ResetGrapple();
         }
 
         if (collider.gameObject.CompareTag("Finish4"))
@@ -182,6 +188,7 @@ public class PlayerMovement : MonoBehaviour
             //Destroy(this.gameObject);
             startPoint = respawns[3].position;
             transform.position = startPoint;
+            grappleHook.ResetGrapple();
         }
 
     }
@@ -195,6 +202,8 @@ public class PlayerMovement : MonoBehaviour
             transform.position = startPoint;
 
             Invoke("Delay", 0.5f);
+
+            grappleHook.ResetGrapple();
         }
     }
     private void Delay()

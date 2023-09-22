@@ -12,7 +12,7 @@ public class GrappleHook : MonoBehaviour
     [SerializeField] float grappleShootSpeed = 20f;
 
     [HideInInspector] public bool retracting = false;
-    bool isGrappling = false;
+    [HideInInspector] public bool isGrappling = false;
 
     Vector2 target;
 
@@ -58,11 +58,11 @@ public class GrappleHook : MonoBehaviour
             line.enabled = true;
             line.positionCount = 2;
 
-            StartCoroutine(Grapple());
+            Grapple();
         }
     }
 
-    IEnumerator Grapple()
+    void Grapple()
     {
         float t = 0;
         float time = 10;
@@ -77,10 +77,16 @@ public class GrappleHook : MonoBehaviour
             newPos = Vector2.Lerp(transform.position, target, t / time);
             line.SetPosition(0, transform.position);
             line.SetPosition(1, newPos);
-            yield return null;
         }
 
         line.SetPosition(1, target);
         retracting = true;
-    }   
+    }
+
+    public void ResetGrapple()
+    {
+        retracting = false;
+        isGrappling = false;
+        line.enabled = false;
+    }
 }
