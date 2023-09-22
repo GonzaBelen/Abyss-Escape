@@ -11,7 +11,12 @@ TagManager:
   - Enemy
   - Box
   - End
-  - Box2
+  - Box Move
+  - Box Jump
+  - Box Run
+  - Box Rock
+  - Box Grapple
+  - Box Rock2
   layers:
   - Default
   - TransparentFX

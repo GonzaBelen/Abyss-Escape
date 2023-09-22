@@ -6,57 +6,60 @@ public class Controls : MonoBehaviour
 {
    
     [SerializeField] private GameObject[] controls;
-    [SerializeField] private bool camera2;
-
+   
     void Start()
     {
-        camera2 = false;
+  
     }
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.A) && controls[0] == true || Input.GetKeyUp(KeyCode.D) && controls[0] == true)
-        {
-            Destroy(controls[0]);
-            controls[1].SetActive(true);
-        }
-
-        if (Input.GetButtonDown("Jump") && controls[1] == true)
-        {
-            Destroy(controls[1]);
-            controls[2].SetActive(true);
-        }
-
-        if (Input.GetKeyDown(KeyCode.LeftShift) && controls[2] == true)
-        {
-            Destroy(controls[2]);
-        }
-
-        if (camera2 == true)
-        {
-            controls[3].SetActive(true);
-            camera2 = false;
-        }
-
-        if (Input.GetKeyDown(KeyCode.E) && controls[3] == true)
-        {
-            Destroy(controls[3]);
-            controls[4].SetActive(true);
-        }
-
+    
 
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.CompareTag("Box"))
+   
+
+        if (collider.gameObject.CompareTag("Box Move"))
         {
-            camera2 = true;
+            Destroy(controls[0]);
+            Destroy(collider);
+            controls[1].SetActive(true);
         }
 
-        if (collider.gameObject.CompareTag("Box2"))
+        if (collider.gameObject.CompareTag("Box Jump"))
+        {
+            Destroy(controls[1]);
+            Destroy(collider);
+            controls[2].SetActive(true);
+        }
+
+        if (collider.gameObject.CompareTag("Box Run"))
+        {
+            Destroy(controls[2]);
+            Destroy(collider);
+
+        }
+
+        if (collider.gameObject.CompareTag("Box Rock2"))
+        {
+            controls[3].SetActive(true);
+            Destroy(collider);
+        }
+
+        if (collider.gameObject.CompareTag("Box Rock"))
+        {
+            Destroy(controls[3]);
+            Destroy(collider);
+            controls[4].SetActive(true);
+        }
+
+        if (collider.gameObject.CompareTag("Box Grapple"))
         {
             Destroy(controls[4]);
+            Destroy(collider);
         }
 
     }
