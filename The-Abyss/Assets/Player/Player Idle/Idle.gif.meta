@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 13dbfde7088ee1847aedda640bfdef56
+guid: 319031ef719651e4b8211ed3fd0c864e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,29 +106,16 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Personaje quieto_0
+      name: Idle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 46
+        width: 48
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -137,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 061b1fc249344ef4589312cabe8273e2
-      internalID: 2085290630
+      spriteID: 596f3b86889937f4ea3f7e38466246dd
+      internalID: -1493563381
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Personaje quieto_1
+      name: Idle_1
       rect:
         serializedVersion: 2
         x: 48
@@ -153,19 +140,19 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 2, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b90a623414941624d894a419aa9e2962
-      internalID: 1865788069
+      spriteID: d276933110e99f943b4d6b52b73f9e50
+      internalID: 262490916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Personaje quieto_2
+      name: Idle_2
       rect:
         serializedVersion: 2
         x: 96
@@ -174,19 +161,19 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 2, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d716eac78da07048b87f5728deb22e0
-      internalID: 657204214
+      spriteID: c21473c794eee50458c591dea471ea88
+      internalID: -1541781202
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Personaje quieto_3
+      name: Idle_3
       rect:
         serializedVersion: 2
         x: 144
@@ -195,13 +182,13 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 2, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 497bbee05574863469d91a85fb593380
-      internalID: 151458864
+      spriteID: 81994c9ba0d1f644a802acf3905c6041
+      internalID: -749576951
       vertices: []
       indices: 
       edges: []
@@ -217,10 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Personaje quieto_0: 2085290630
-      Personaje quieto_1: 1865788069
-      Personaje quieto_2: 657204214
-      Personaje quieto_3: 151458864
+      Idle_0: -1493563381
+      Idle_1: 262490916
+      Idle_2: -1541781202
+      Idle_3: -749576951
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e5afb07d2473da54ab0a912c959ec2d6
+guid: 31ab902b2f7aa8d45a5721b058e103e5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,12 +110,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Picar_0
+      name: GOST_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 59
+        width: 48
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -124,92 +124,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b0b5f091e968c448bb81dc2c6526c77
-      internalID: -2107436791
+      spriteID: 45a00fe7e056d144996e3922c15d1aec
+      internalID: 2107975427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Picar_1
+      name: GOST_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 48
         y: 0
-        width: 64
+        width: 48
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 3, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8a62223ac174c54797d3b47a0539c5d
-      internalID: 1357999856
+      spriteID: d7f0badd3ddc8304aa5c14f68e8ae6f6
+      internalID: -2019662880
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Picar_2
+      name: GOST_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 96
         y: 0
-        width: 64
+        width: 48
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 4, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c6bd1890c90eb44f9ca8db594834131
-      internalID: 907599008
+      spriteID: 9050be1d9143f4948bd5954bc7e90e1a
+      internalID: -14852856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Picar_3
+      name: GOST_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 144
         y: 0
-        width: 64
+        width: 48
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 4, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90d14a0608f56774d8dd4e46378191bd
-      internalID: 348608959
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Picar_4
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 5, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e4cef2341ff7054aaf2dbe5801a857b
-      internalID: -1950204730
+      spriteID: 170ce1dbde2320841a64899aafdd8a03
+      internalID: 783104263
       vertices: []
       indices: 
       edges: []
@@ -225,11 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Picar_0: -2107436791
-      Picar_1: 1357999856
-      Picar_2: 907599008
-      Picar_3: 348608959
-      Picar_4: -1950204730
+      GOST_0: 2107975427
+      GOST_1: -2019662880
+      GOST_2: -14852856
+      GOST_3: 783104263
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

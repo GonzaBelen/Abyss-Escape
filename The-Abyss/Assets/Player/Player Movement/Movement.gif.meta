@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f5f716bbe258e904a96735e390757162
+guid: cb76e70c528fbca44b1796d90c915438
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,102 +106,89 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PJ moviendose  1_0
+      name: Personaje moviendose_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 47
+        width: 48
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85b915bee80f0d0498d13278178b7de5
-      internalID: -688191366
+      spriteID: 305ef74fb955de14da804b3c85413618
+      internalID: 1370402549
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PJ moviendose  1_1
+      name: Personaje moviendose_1
       rect:
         serializedVersion: 2
         x: 48
         y: 0
-        width: 47
+        width: 48
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d992d5cc7031a54681994cb49a2b72d
-      internalID: 2144943649
+      spriteID: 49898f4bd722c6647ab3fdcc5d48271f
+      internalID: -29328561
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PJ moviendose  1_2
+      name: Personaje moviendose_2
       rect:
         serializedVersion: 2
         x: 96
         y: 0
-        width: 46
+        width: 48
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8b4db561d1edc144b67f8c1139c7af9
-      internalID: -1611361545
+      spriteID: 06ce836c213586345953ac8cbdbc218c
+      internalID: 551682824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PJ moviendose  1_3
+      name: Personaje moviendose_3
       rect:
         serializedVersion: 2
         x: 144
         y: 0
-        width: 47
+        width: 48
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27fec909f3c43364faf3b2def2b15ddd
-      internalID: -869001751
+      spriteID: 3d60db1f0ea45f846af405af4622f2b1
+      internalID: 799883917
       vertices: []
       indices: 
       edges: []
@@ -217,10 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PJ moviendose  1_0: -688191366
-      PJ moviendose  1_1: 2144943649
-      PJ moviendose  1_2: -1611361545
-      PJ moviendose  1_3: -869001751
+      Personaje moviendose_0: 1370402549
+      Personaje moviendose_1: -29328561
+      Personaje moviendose_2: 551682824
+      Personaje moviendose_3: 799883917
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
