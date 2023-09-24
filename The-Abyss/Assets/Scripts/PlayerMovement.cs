@@ -37,6 +37,9 @@ public class PlayerMovement : MonoBehaviour
     [Header("Animation")]
     private Animator animator;
 
+    //[Header("Sound")]
+    //[SerializeField] private AudioClip jumpSound;
+
 
 
     private void Start()
@@ -60,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
             actualVelocity = runVelocity;
             if (jump == true)
             {
-                RunJump();
+                RunJump();   
             }
         }
 
@@ -113,6 +116,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector3 objectiveVel = new Vector2(move, rb2D.velocity.y);
         rb2D.velocity = Vector3.SmoothDamp(rb2D.velocity, objectiveVel, ref velocity, movementSoft);
+        
 
         if (move > 0 && !lokingRight)
         {
@@ -127,6 +131,7 @@ public class PlayerMovement : MonoBehaviour
         {
             grounded = false;
             rb2D.AddForce(new Vector2(0f, actualJumpForce));
+            
         }
     }
 
@@ -135,6 +140,8 @@ public class PlayerMovement : MonoBehaviour
         actualVelocity = runVelocity;
         actualJumpForce = jumpForce * 1.5f;
         rb2D.gravityScale = 4.0f;
+        
+        
     }
 
     private void StopRun()
