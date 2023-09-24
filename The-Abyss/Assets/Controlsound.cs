@@ -9,20 +9,25 @@ public class Controlsound : MonoBehaviour
 
     private AudioSource audioSource;
   
-  private void awake(){
-    if (Instance == null){
+  private void Awake(){
+
+    if (Instance == null)
+    {
         Instance = this;
         DontDestroyOnLoad(gameObject);
-    }else{
+
+    }
+    else
+    {
         Destroy(gameObject);
     }
 
     audioSource = GetComponent<AudioSource>();
   }
 
-public void EjecutarSonido (AudioClip sonido)
-{
+  public void EjecutarSonido (AudioClip sonido)
+  {
     audioSource.PlayOneShot(sonido);
-}
+  }
 
 }

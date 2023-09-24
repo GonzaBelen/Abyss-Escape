@@ -37,8 +37,8 @@ public class PlayerMovement : MonoBehaviour
     [Header("Animation")]
     private Animator animator;
 
-    //[Header("Sound")]
-    //[SerializeField] private AudioClip jumpSound;
+    [Header("Sound")]
+    [SerializeField] private AudioClip jumpSound;
 
 
 
@@ -86,6 +86,9 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
+
+            Controlsound.Instance.EjecutarSonido(jumpSound);
+            
         }
 
         if (grounded && releasedShiftInAir)

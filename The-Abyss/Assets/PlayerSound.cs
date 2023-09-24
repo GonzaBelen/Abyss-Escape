@@ -18,6 +18,7 @@ public class PlayerSound : MonoBehaviour
     if(Input.GetButtonDown("Jump"))
     {
         audioSource.PlayOneShot(SoundJump);
+        Debug.Log("hi");
     } 
   }
 }

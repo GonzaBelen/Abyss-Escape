@@ -60,7 +60,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\scenes.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
+    <Compile Include="Assets\PlayerSound.cs" />
     <Compile Include="Assets\Scripts\Controls.cs" />
+    <Compile Include="Assets\Controlsound.cs" />
     <Compile Include="Assets\Scripts\GrappleHook.cs" />
     <Compile Include="Assets\Scripts\DestroyRock.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
