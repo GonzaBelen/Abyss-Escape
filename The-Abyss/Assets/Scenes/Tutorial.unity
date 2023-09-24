@@ -7044,7 +7044,7 @@ MonoBehaviour:
   grapplableMask:
     serializedVersion: 2
     m_Bits: 64
-  maxDistance: 5
+  maxDistance: 6
   grappleSpeed: 10
   grappleShootSpeed: 100
   retracting: 0
@@ -7122,7 +7122,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2.35
   m_Material: {fileID: 6200000, guid: 907a6789b5bef124d959b4a807cbdfd8, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -7223,10 +7223,9 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1
+    widthMultiplier: 0.3
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -7245,14 +7244,14 @@ LineRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 0.9990684, b: 0, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 0.9990684, b: 0, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 65150
+      ctime0: 0
       ctime1: 65535
       ctime2: 0
       ctime3: 0
@@ -10667,8 +10666,8 @@ Transform:
   m_GameObject: {fileID: 1741362465}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 184.24, y: 119.79, z: 0.36055127}
-  m_LocalScale: {x: 1.4861, y: 1.4861, z: 1.4861}
+  m_LocalPosition: {x: 184.24, y: 119.91, z: 0.36055127}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 887251509}
