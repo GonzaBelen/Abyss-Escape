@@ -195,7 +195,40 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy1"))
+        {
+            this.gameObject.SetActive(false);
+            startPoint = respawns[0].position;
+            transform.position = startPoint;
+
+            Invoke("Delay", 0.5f);
+
+            grappleHook.ResetGrapple();
+        }
+
+        if (collision.gameObject.CompareTag("Enemy2"))
+        {
+            this.gameObject.SetActive(false);
+            startPoint = respawns[1].position;
+            transform.position = startPoint;
+
+            Invoke("Delay", 0.5f);
+
+            grappleHook.ResetGrapple();
+        }
+
+        if (collision.gameObject.CompareTag("Enemy3"))
+        {
+            this.gameObject.SetActive(false);
+            startPoint = respawns[2].position;
+            transform.position = startPoint;
+
+            Invoke("Delay", 0.5f);
+
+            grappleHook.ResetGrapple();
+        }
+
+        if (collision.gameObject.CompareTag("Enemy4"))
         {
             this.gameObject.SetActive(false);
             startPoint = respawns[3].position;

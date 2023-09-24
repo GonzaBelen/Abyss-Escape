@@ -8,7 +8,6 @@ TagManager:
   - Finish2
   - Finish3
   - Finish4
-  - Enemy
   - Box
   - End
   - Box Move
@@ -17,6 +16,12 @@ TagManager:
   - Box Rock
   - Box Grapple
   - Box Rock2
+  - Rock2
+  - AccessRock2
+  - Enemy2
+  - Enemy1
+  - Enemy4
+  - Enemy3
   layers:
   - Default
   - TransparentFX

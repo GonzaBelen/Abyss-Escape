@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Scenes : MonoBehaviour
 {
     [SerializeField] private GameObject[] cameras;
@@ -20,18 +21,13 @@ public class Scenes : MonoBehaviour
             
             cameras[0].SetActive(false);
             cameras[1].SetActive(true);
-            
 
-            Invoke("Delay", 1);
+            changePoint[0].SetActive(false);
+            changePoint[1].SetActive(true);
+
+         
         }
 
     }
-
-    private void Delay()
-    {
-        changePoint[0].SetActive(false);
-        changePoint[1].SetActive(true);
-    }
-
   
 }

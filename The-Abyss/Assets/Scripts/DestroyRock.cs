@@ -6,8 +6,8 @@ public class DestroyRock : MonoBehaviour
 {
     
     [SerializeField] private float radioHit  = 1.15f; 
-    [SerializeField] private KeyCode buttonHit = KeyCode.E; 
-
+    [SerializeField] private KeyCode buttonHit = KeyCode.E;
+    private bool pickaxe;
 
     private void Update()
     {
@@ -30,6 +30,11 @@ public class DestroyRock : MonoBehaviour
             {
                 destroyRock(collider.gameObject);
             }
+
+            if (collider.CompareTag("Rock2") && pickaxe == true)
+            {
+                destroyRock(collider.gameObject);
+            }
         }
     }
 
@@ -41,6 +46,15 @@ public class DestroyRock : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, radioHit);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("AccessRock2"))
+        {
+            pickaxe = true;
+            Destroy(collision);
+        }
     }
 }
 
