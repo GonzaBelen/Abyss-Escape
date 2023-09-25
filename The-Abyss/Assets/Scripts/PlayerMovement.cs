@@ -41,7 +41,6 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
 
     [Header("Sound")]
-    [SerializeField] private AudioClip jumpSound;
 
 
     [Header("EasterEggs")]
@@ -95,11 +94,11 @@ public class PlayerMovement : MonoBehaviour
               
         }
 
-        if(jump == true)
-        {
-            Controlsound.Instance.PlaySound(jumpSound);
+        //if(jump == true)
+        //{
+        //    ControlSound.Instance.PlaySound(jumpSound);
             
-        }
+        //}
 
         if (grounded && releasedShiftInAir)
         {            

@@ -2,33 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Controlsound : MonoBehaviour
+public class ControlSound : MonoBehaviour
 {
+    [SerializeField] private GameObject bckgroundMusic1;
+    [SerializeField] private GameObject bckgroundMusic2;
 
-    public static Controlsound Instance;
-
-    private AudioSource audioSource;
-  
-  private void Awake(){
-
-    if (Instance == null)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
-
+        if (collider.gameObject.CompareTag("Player"))
+        {            
+            bckgroundMusic1.SetActive(false);
+            bckgroundMusic2.SetActive(true);
+        }
     }
-    else
-    {
-        Destroy(gameObject);
-    }
-
-    audioSource = GetComponent<AudioSource>();
-  }
-
-  public void PlaySound (AudioClip sonido)
-  {
-    audioSource.PlayOneShot(sonido);
-  }
-
-
 }
