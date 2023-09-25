@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private bool grounded;
     private float actualJumpForce;
     private bool jump = false;
+ 
 
     [Header("Run")]
     private bool releasedShiftInAir = false;
@@ -86,13 +87,18 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
+              
+        }
 
+        if(jump == true)
+        {
             Controlsound.Instance.EjecutarSonido(jumpSound);
             
         }
 
         if (grounded && releasedShiftInAir)
         {
+            
             StopRun();
             releasedShiftInAir = false;
         }
@@ -172,43 +178,54 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collider.gameObject.CompareTag("Finish"))
         {
-            //Destroy(this.gameObject);
+            
             transform.position = startPoint;
             grappleHook.ResetGrapple();
         }
 
         if (collider.gameObject.CompareTag("Finish2"))
         {
-            //Destroy(this.gameObject);
+            
             startPoint = respawns[1].position;
-            transform.position = startPoint;
-            grappleHook.ResetGrapple();
+           
+           
         }
 
         if (collider.gameObject.CompareTag("Finish3"))
         {
-            //Destroy(this.gameObject);
+           
             startPoint = respawns[2].position;
-            transform.position = startPoint;
-            grappleHook.ResetGrapple();
+          
         }
 
         if (collider.gameObject.CompareTag("Finish4"))
         {
-            //Destroy(this.gameObject);
+            
             startPoint = respawns[3].position;
-            transform.position = startPoint;
-            grappleHook.ResetGrapple();
+           
         }
 
+        if (collider.gameObject.CompareTag("Unlock"))
+        {
+            
+            startPoint = respawns[4].position;
+            transform.position = startPoint;
+        }
+
+        if (collider.gameObject.CompareTag("Unlock2"))
+        {
+
+            startPoint = respawns[5].position;
+            transform.position = startPoint;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy1"))
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             this.gameObject.SetActive(false);
-            startPoint = respawns[0].position;
+            
             transform.position = startPoint;
 
             Invoke("Delay", 0.5f);
@@ -216,38 +233,7 @@ public class PlayerMovement : MonoBehaviour
             grappleHook.ResetGrapple();
         }
 
-        if (collision.gameObject.CompareTag("Enemy2"))
-        {
-            this.gameObject.SetActive(false);
-            startPoint = respawns[1].position;
-            transform.position = startPoint;
-
-            Invoke("Delay", 0.5f);
-
-            grappleHook.ResetGrapple();
-        }
-
-        if (collision.gameObject.CompareTag("Enemy3"))
-        {
-            this.gameObject.SetActive(false);
-            startPoint = respawns[2].position;
-            transform.position = startPoint;
-
-            Invoke("Delay", 0.5f);
-
-            grappleHook.ResetGrapple();
-        }
-
-        if (collision.gameObject.CompareTag("Enemy4"))
-        {
-            this.gameObject.SetActive(false);
-            startPoint = respawns[3].position;
-            transform.position = startPoint;
-
-            Invoke("Delay", 0.5f);
-
-            grappleHook.ResetGrapple();
-        }
+      
     }
     private void Delay()
     {
