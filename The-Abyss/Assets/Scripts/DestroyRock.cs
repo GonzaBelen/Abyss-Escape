@@ -7,7 +7,7 @@ public class DestroyRock : MonoBehaviour
     
     [SerializeField] private float radioHit  = 1.15f; 
     [SerializeField] private KeyCode buttonHit = KeyCode.E;
-    private bool pickaxe;
+    public static bool pickaxe = false;
 
     private void Update()
     {
@@ -32,6 +32,16 @@ public class DestroyRock : MonoBehaviour
             }
 
             if (collider.CompareTag("Rock2") && pickaxe == true)
+            {
+                destroyRock(collider.gameObject);
+            }
+
+            if (collider.CompareTag("Rock3") && pickaxe == true)
+            {
+                destroyRock(collider.gameObject);
+            }
+
+            if (collider.CompareTag("Rock4") && pickaxe == true)
             {
                 destroyRock(collider.gameObject);
             }

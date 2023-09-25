@@ -43,9 +43,10 @@ public class PlayerMovement : MonoBehaviour
     [Header("Sound")]
     [SerializeField] private AudioClip jumpSound;
 
+
     [Header("EasterEggs")]
     [SerializeField] private int coins = 0;
-    [SerializeField] private bool canUnlock = false; 
+    public static bool canUnlock = false; 
 
     private void Start()
     {
@@ -96,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(jump == true)
         {
-            Controlsound.Instance.EjecutarSonido(jumpSound);
+            Controlsound.Instance.PlaySound(jumpSound);
             
         }
 
@@ -255,6 +256,8 @@ public class PlayerMovement : MonoBehaviour
             canUnlock = true;
             Destroy(collider.gameObject);
         }
+
+       
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

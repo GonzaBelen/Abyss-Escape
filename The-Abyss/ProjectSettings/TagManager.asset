@@ -31,6 +31,10 @@ TagManager:
   - Coin
   - SecretWall
   - Key
+  - Music1
+  - Music2
+  - Rock3
+  - Rock4
   layers:
   - Default
   - TransparentFX

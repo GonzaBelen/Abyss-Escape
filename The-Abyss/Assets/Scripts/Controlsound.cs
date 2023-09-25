@@ -25,9 +25,10 @@ public class Controlsound : MonoBehaviour
     audioSource = GetComponent<AudioSource>();
   }
 
-  public void EjecutarSonido (AudioClip sonido)
+  public void PlaySound (AudioClip sonido)
   {
     audioSource.PlayOneShot(sonido);
   }
+
 
 }

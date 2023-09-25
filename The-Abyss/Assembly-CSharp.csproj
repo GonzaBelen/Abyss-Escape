@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\Controlsound.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Controls.cs" />
+    <Compile Include="Assets\Scripts\Controls2.cs" />
     <Compile Include="Assets\Scripts\GrappleHook.cs" />
     <Compile Include="Assets\Scripts\DestroyRock.cs" />
     <Compile Include="Assets\Scripts\PlayerSound.cs" />
