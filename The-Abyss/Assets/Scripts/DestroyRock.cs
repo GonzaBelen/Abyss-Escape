@@ -53,7 +53,7 @@ public class DestroyRock : MonoBehaviour
         if (collision.gameObject.CompareTag("AccessRock2"))
         {
             pickaxe = true;
-            Destroy(collision);
+            Destroy(collision.gameObject);
         }
     }
 }

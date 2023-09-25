@@ -43,7 +43,9 @@ public class PlayerMovement : MonoBehaviour
     [Header("Sound")]
     [SerializeField] private AudioClip jumpSound;
 
-
+    [Header("EasterEggs")]
+    [SerializeField] private int coins = 0;
+    [SerializeField] private bool canUnlock = false; 
 
     private void Start()
     {
@@ -99,8 +101,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         if (grounded && releasedShiftInAir)
-        {
-            
+        {            
             StopRun();
             releasedShiftInAir = false;
         }
@@ -112,7 +113,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (!gh.retracting)
         {
-
             Move(movementHor * Time.fixedDeltaTime, jump);
         }
         else
@@ -141,8 +141,7 @@ public class PlayerMovement : MonoBehaviour
         if (grounded && jump)
         {
             grounded = false;
-            rb2D.AddForce(new Vector2(0f, actualJumpForce));
-            
+            rb2D.AddForce(new Vector2(0f, actualJumpForce));            
         }
     }
 
@@ -150,9 +149,7 @@ public class PlayerMovement : MonoBehaviour
     {
         actualVelocity = runVelocity;
         actualJumpForce = jumpForce * 1.5f;
-        rb2D.gravityScale = 4.0f;
-        
-        
+        rb2D.gravityScale = 4.0f;                
     }
 
     private void StopRun()
@@ -179,71 +176,60 @@ public class PlayerMovement : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.CompareTag("Finish"))
-        {
-            
+        {           
             transform.position = startPoint;
             grappleHook.ResetGrapple();
         }
 
         if (collider.gameObject.CompareTag("Finish1"))
         {
-
             startPoint = respawns[0].position;
         }
 
         if (collider.gameObject.CompareTag("Finish2"))
-        {
-            
-            startPoint = respawns[1].position;
-           
-           
+        {            
+            startPoint = respawns[1].position;                     
         }
 
         if (collider.gameObject.CompareTag("Finish3"))
-        {
-           
-            startPoint = respawns[2].position;
-          
+        {           
+            startPoint = respawns[2].position;          
         }
 
         if (collider.gameObject.CompareTag("Finish4"))
-        {
-            
-            startPoint = respawns[3].position;
-           
+        {            
+            startPoint = respawns[3].position;           
         }
 
         if (collider.gameObject.CompareTag("Finish5"))
         {
-
             startPoint = respawns[6].position;
-
         }
 
         if (collider.gameObject.CompareTag("Finish6"))
         {
-
             startPoint = respawns[7].position;
-
         }
 
         if (collider.gameObject.CompareTag("Finish7"))
         {
-
             startPoint = respawns[8].position;
-
         }
 
-        if (collider.gameObject.CompareTag("Unlock"))
+        if (collider.gameObject.CompareTag("Finish8"))
         {
-            
+            startPoint = respawns[9].position;
+        }
+
+
+        if (collider.gameObject.CompareTag("Unlock"))
+        {            
             startPoint = respawns[4].position;
             transform.position = startPoint;
         }
 
         if (collider.gameObject.CompareTag("Unlock2"))
         {
-
             startPoint = respawns[5].position;
             transform.position = startPoint;
         }
@@ -251,14 +237,23 @@ public class PlayerMovement : MonoBehaviour
         if (collider.gameObject.CompareTag("Level1"))
         {
             SceneManager.LoadScene(1);
-
         }
 
         if (collider.gameObject.CompareTag("End"))
         {
-
             SceneManager.LoadScene(2);
+        }
 
+        if (collider.gameObject.CompareTag("Coin"))
+        {
+            coins = coins + 1;
+            Destroy(collider.gameObject);
+        }
+
+        if (collider.gameObject.CompareTag("Key"))
+        {
+            canUnlock = true;
+            Destroy(collider.gameObject);
         }
     }
 
@@ -267,17 +262,17 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             this.gameObject.SetActive(false);
-
             transform.position = startPoint;
-
             grappleHook.ResetGrapple();
-
             Invoke("Delay", 0.5f);
-
         }
 
-      
+        if (collision.gameObject.CompareTag("SecretWall") && canUnlock)
+        {
+            collision.gameObject.SetActive(false);
+        }    
     }
+
     private void Delay()
     {
         this.gameObject.SetActive(true);

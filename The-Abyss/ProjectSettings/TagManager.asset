@@ -26,6 +26,11 @@ TagManager:
   - Finish6
   - Finish7
   - Level1
+  - Finish8
+  - Finish9
+  - Coin
+  - SecretWall
+  - Key
   layers:
   - Default
   - TransparentFX
