@@ -21,6 +21,11 @@ TagManager:
   - Enemy
   - Unlock
   - Unlock2
+  - Finish1
+  - Finish5
+  - Finish6
+  - Finish7
+  - Level1
   layers:
   - Default
   - TransparentFX

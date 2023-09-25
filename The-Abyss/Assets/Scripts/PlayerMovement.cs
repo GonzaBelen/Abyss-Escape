@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -183,6 +185,12 @@ public class PlayerMovement : MonoBehaviour
             grappleHook.ResetGrapple();
         }
 
+        if (collider.gameObject.CompareTag("Finish1"))
+        {
+
+            startPoint = respawns[0].position;
+        }
+
         if (collider.gameObject.CompareTag("Finish2"))
         {
             
@@ -205,6 +213,27 @@ public class PlayerMovement : MonoBehaviour
            
         }
 
+        if (collider.gameObject.CompareTag("Finish5"))
+        {
+
+            startPoint = respawns[6].position;
+
+        }
+
+        if (collider.gameObject.CompareTag("Finish6"))
+        {
+
+            startPoint = respawns[7].position;
+
+        }
+
+        if (collider.gameObject.CompareTag("Finish7"))
+        {
+
+            startPoint = respawns[8].position;
+
+        }
+
         if (collider.gameObject.CompareTag("Unlock"))
         {
             
@@ -218,6 +247,19 @@ public class PlayerMovement : MonoBehaviour
             startPoint = respawns[5].position;
             transform.position = startPoint;
         }
+
+        if (collider.gameObject.CompareTag("Level1"))
+        {
+            SceneManager.LoadScene(1);
+
+        }
+
+        if (collider.gameObject.CompareTag("End"))
+        {
+
+            SceneManager.LoadScene(2);
+
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -225,12 +267,13 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             this.gameObject.SetActive(false);
-            
+
             transform.position = startPoint;
+
+            grappleHook.ResetGrapple();
 
             Invoke("Delay", 0.5f);
 
-            grappleHook.ResetGrapple();
         }
 
       
