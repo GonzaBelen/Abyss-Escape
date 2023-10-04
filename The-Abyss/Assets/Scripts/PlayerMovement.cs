@@ -24,8 +24,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Vector3 boxDimensions;
     [SerializeField] private bool grounded;
     private float actualJumpForce;
-    private bool jump = false;
- 
+    private bool jump = false; 
 
     [Header("Run")]
     private bool releasedShiftInAir = false;
@@ -34,21 +33,23 @@ public class PlayerMovement : MonoBehaviour
     [Header("Respawn")]
     Vector3 startPoint;
     private GrappleHook grappleHook;
-
     [SerializeField] private Transform[] respawns;
 
     [Header("Animation")]
     private Animator animator;
 
     [Header("Sound")]
-
+    private AudioSource jumpSound;
+    //[SerializeField]private AudioSource coinSound;
 
     [Header("EasterEggs")]
+    [SerializeField] private GameObject[] coin;
     [SerializeField] private int coins = 0;
     public static bool canUnlock = false; 
 
     private void Start()
     {
+        jumpSound = GetComponent<AudioSource>();
         startPoint = respawns[0].position;
         rb2D = GetComponent<Rigidbody2D>();
         gh = GetComponent<GrappleHook>();
@@ -94,12 +95,6 @@ public class PlayerMovement : MonoBehaviour
               
         }
 
-        //if(jump == true)
-        //{
-        //    ControlSound.Instance.PlaySound(jumpSound);
-            
-        //}
-
         if (grounded && releasedShiftInAir)
         {            
             StopRun();
@@ -140,6 +135,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (grounded && jump)
         {
+            jumpSound.Play();
             grounded = false;
             rb2D.AddForce(new Vector2(0f, actualJumpForce));            
         }
@@ -236,16 +232,17 @@ public class PlayerMovement : MonoBehaviour
 
         if (collider.gameObject.CompareTag("Level1"))
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
 
         if (collider.gameObject.CompareTag("End"))
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
 
         if (collider.gameObject.CompareTag("Coin"))
         {
+            //ControlSound.Instance.PlaySound(coinSound);
             coins = coins + 1;
             Destroy(collider.gameObject);
         }

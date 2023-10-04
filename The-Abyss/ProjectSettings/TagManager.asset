@@ -72,6 +72,9 @@ TagManager:
   - name: Background
     uniqueID: 3280019607
     locked: 0
+  - name: GrapplePoints
+    uniqueID: 2589056003
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
