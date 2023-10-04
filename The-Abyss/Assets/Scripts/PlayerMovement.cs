@@ -39,8 +39,9 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
 
     [Header("Sound")]
-    private AudioSource jumpSound;
-    //[SerializeField]private AudioSource coinSound;
+    [SerializeField] private AudioClip jumpSound; 
+    //private AudioSource jumpSound;
+    [SerializeField]private AudioClip coinSound;
 
     [Header("EasterEggs")]
     [SerializeField] private GameObject[] coin;
@@ -49,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        jumpSound = GetComponent<AudioSource>();
+        //jumpSound = GetComponent<AudioSource>();
         startPoint = respawns[0].position;
         rb2D = GetComponent<Rigidbody2D>();
         gh = GetComponent<GrappleHook>();
@@ -92,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
-              
+             
         }
 
         if (grounded && releasedShiftInAir)
@@ -135,9 +136,10 @@ public class PlayerMovement : MonoBehaviour
 
         if (grounded && jump)
         {
-            jumpSound.Play();
+            PlayerSound1.Instance.ExecuteSound(jumpSound);  
             grounded = false;
-            rb2D.AddForce(new Vector2(0f, actualJumpForce));            
+            rb2D.AddForce(new Vector2(0f, actualJumpForce));    
+                  
         }
     }
 
@@ -242,7 +244,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (collider.gameObject.CompareTag("Coin"))
         {
-            //ControlSound.Instance.PlaySound(coinSound);
+            PlayerSound1.Instance.ExecuteSound(coinSound);
             coins = coins + 1;
             Destroy(collider.gameObject);
         }

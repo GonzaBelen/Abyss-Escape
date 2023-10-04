@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ControlSound : MonoBehaviour
+public class ControlSoundp : MonoBehaviour
 {
     [SerializeField] private GameObject bckgroundMusic1;
     [SerializeField] private GameObject bckgroundMusic2;
+
+
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -15,4 +17,5 @@ public class ControlSound : MonoBehaviour
             bckgroundMusic2.SetActive(true);
         }
     }
+
 }
