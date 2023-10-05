@@ -32,8 +32,10 @@ public class PlayerMovement : MonoBehaviour
     
     [Header("Respawn")]
     Vector3 startPoint;
-    private GrappleHook grappleHook;
     [SerializeField] private Transform[] respawns;
+    public static int count;
+
+    private GrappleHook grappleHook;
 
     [Header("Animation")]
     private Animator animator;
@@ -52,6 +54,7 @@ public class PlayerMovement : MonoBehaviour
     {
         //jumpSound = GetComponent<AudioSource>();
         startPoint = respawns[0].position;
+        count = 0;
         rb2D = GetComponent<Rigidbody2D>();
         gh = GetComponent<GrappleHook>();
         runVelocity = movementVelocity * 2;
@@ -186,7 +189,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (collider.gameObject.CompareTag("Finish2"))
         {            
-            startPoint = respawns[1].position;                     
+            startPoint = respawns[1].position;
+            count = 1;
         }
 
         if (collider.gameObject.CompareTag("Finish3"))
