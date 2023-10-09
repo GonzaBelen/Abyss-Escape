@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 319031ef719651e4b8211ed3fd0c864e
+guid: a176055563ce0d746b0c1544535f1d99
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -71,8 +71,21 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: -1
     textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -106,24 +119,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle_0
+      name: Shawn Idle-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,20 +131,20 @@ TextureImporter:
         width: 48
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 596f3b86889937f4ea3f7e38466246dd
-      internalID: -1493563381
+      spriteID: 5e85d9e098427ef4788e6a8af8a21ded
+      internalID: 97812684
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_1
+      name: Shawn Idle-Sheet_1
       rect:
         serializedVersion: 2
         x: 48
@@ -152,20 +152,20 @@ TextureImporter:
         width: 48
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d276933110e99f943b4d6b52b73f9e50
-      internalID: 262490916
+      spriteID: ed304eb64a8d00c459f517ef9a9ee56a
+      internalID: -755586806
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_2
+      name: Shawn Idle-Sheet_2
       rect:
         serializedVersion: 2
         x: 96
@@ -173,20 +173,20 @@ TextureImporter:
         width: 48
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c21473c794eee50458c591dea471ea88
-      internalID: -1541781202
+      spriteID: ac3a8b2550d23f2418e45162971eb4e3
+      internalID: -1676840277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_3
+      name: Shawn Idle-Sheet_3
       rect:
         serializedVersion: 2
         x: 144
@@ -194,14 +194,14 @@ TextureImporter:
         width: 48
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81994c9ba0d1f644a802acf3905c6041
-      internalID: -749576951
+      spriteID: 9930f8ad7a1a20a478ca6fd6cd651432
+      internalID: 134191493
       vertices: []
       indices: 
       edges: []
@@ -217,10 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Idle_0: -1493563381
-      Idle_1: 262490916
-      Idle_2: -1541781202
-      Idle_3: -749576951
+      Shawn Idle-Sheet_0: 97812684
+      Shawn Idle-Sheet_1: -755586806
+      Shawn Idle-Sheet_2: -1676840277
+      Shawn Idle-Sheet_3: 134191493
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cb76e70c528fbca44b1796d90c915438
+guid: 5d496dbdb2689164ca16b216f8e16761
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,6 +81,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -110,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Personaje moviendose_0
+      name: Shawn Movement-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 305ef74fb955de14da804b3c85413618
-      internalID: 1370402549
+      spriteID: 1cf941f6367f5304789e0a39b41a7115
+      internalID: -535497642
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Personaje moviendose_1
+      name: Shawn Movement-Sheet_1
       rect:
         serializedVersion: 2
         x: 48
@@ -145,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49898f4bd722c6647ab3fdcc5d48271f
-      internalID: -29328561
+      spriteID: 3cc62153e0c94a34691aa8ebcdf78d2c
+      internalID: -767833285
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Personaje moviendose_2
+      name: Shawn Movement-Sheet_2
       rect:
         serializedVersion: 2
         x: 96
@@ -166,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06ce836c213586345953ac8cbdbc218c
-      internalID: 551682824
+      spriteID: 5a0ddd7615c96d04389aea46eec070b4
+      internalID: -10943303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Personaje moviendose_3
+      name: Shawn Movement-Sheet_3
       rect:
         serializedVersion: 2
         x: 144
@@ -187,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d60db1f0ea45f846af405af4622f2b1
-      internalID: 799883917
+      spriteID: acdb519bab937cd439ed3238c68ce76d
+      internalID: -863484317
       vertices: []
       indices: 
       edges: []
@@ -204,10 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Personaje moviendose_0: 1370402549
-      Personaje moviendose_1: -29328561
-      Personaje moviendose_2: 551682824
-      Personaje moviendose_3: 799883917
+      Shawn Movement-Sheet_0: -535497642
+      Shawn Movement-Sheet_1: -767833285
+      Shawn Movement-Sheet_2: -10943303
+      Shawn Movement-Sheet_3: -863484317
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
