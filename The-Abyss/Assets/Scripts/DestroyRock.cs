@@ -7,7 +7,12 @@ public class DestroyRock : MonoBehaviour
     
     [SerializeField] private float radioHit  = 1.15f; 
     [SerializeField] private KeyCode buttonHit = KeyCode.E;
-    public static bool pickaxe = false;
+    public static bool pickaxe;
+
+    private void Start(){
+        
+        pickaxe = false;
+    }
 
     private void Update()
     {

@@ -1985,9 +1985,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 319361947}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 726468628985cd345928d7473578af79, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a844c3f87dcf874c8011000357fb454, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bckgroundMusic1: {fileID: 319361947}
+  bckgroundMusic2: {fileID: 1956110504}
 --- !u!61 &319361951
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5398,7 +5400,7 @@ Transform:
   m_GameObject: {fileID: 1465420577}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 68.94, y: 119.42, z: 0.36055127}
+  m_LocalPosition: {x: 67.66, y: 119.15, z: 0.36055127}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -14426,9 +14428,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1956110504}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 726468628985cd345928d7473578af79, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a844c3f87dcf874c8011000357fb454, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bckgroundMusic1: {fileID: 1956110504}
+  bckgroundMusic2: {fileID: 319361947}
 --- !u!82 &1956110506
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14820,7 +14824,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 40451ad3257c1704f8d755224c41dc1b, type: 3}
+    m_Font: {fileID: 12800000, guid: f1811873568a7e64e8bced23a28ac7c6, type: 3}
     m_FontSize: 40
     m_FontStyle: 1
     m_BestFit: 1

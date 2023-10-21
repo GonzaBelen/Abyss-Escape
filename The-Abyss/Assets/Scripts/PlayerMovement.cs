@@ -41,6 +41,8 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
 
     [Header("Sound")]
+   
+    //[SerializeField] private GameObject Sound; 
     [SerializeField] private AudioClip jumpSound; 
     //private AudioSource jumpSound;
     [SerializeField]private AudioClip coinSound;
@@ -48,10 +50,13 @@ public class PlayerMovement : MonoBehaviour
     [Header("EasterEggs")]
     [SerializeField] private GameObject[] coin;
     [SerializeField] private int coins = 0;
-    public static bool canUnlock = false; 
+    public static bool canUnlock; 
 
     private void Start()
     {
+        
+        //Sound.SetActive(true);
+        canUnlock = false;
         //jumpSound = GetComponent<AudioSource>();
         startPoint = respawns[0].position;
         count = 0;
@@ -243,6 +248,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (collider.gameObject.CompareTag("End"))
         {
+            
             SceneManager.LoadScene(3);
         }
 
