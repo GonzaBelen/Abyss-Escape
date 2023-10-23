@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ControlSoundp : MonoBehaviour
+public class ControlSound : MonoBehaviour
 {
     [SerializeField] private GameObject bckgroundMusic1;
     [SerializeField] private GameObject bckgroundMusic2;

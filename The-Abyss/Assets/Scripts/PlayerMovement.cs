@@ -54,12 +54,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        
+        count = 0;
         //Sound.SetActive(true);
         canUnlock = false;
         //jumpSound = GetComponent<AudioSource>();
         startPoint = respawns[0].position;
-        count = 0;
         rb2D = GetComponent<Rigidbody2D>();
         gh = GetComponent<GrappleHook>();
         runVelocity = movementVelocity * 2;
@@ -190,42 +189,52 @@ public class PlayerMovement : MonoBehaviour
         if (collider.gameObject.CompareTag("Finish1"))
         {
             startPoint = respawns[0].position;
+            
         }
 
         if (collider.gameObject.CompareTag("Finish2"))
-        {            
+        {
             startPoint = respawns[1].position;
-            count = 1;
+            
+            
+            
         }
 
         if (collider.gameObject.CompareTag("Finish3"))
         {           
-            startPoint = respawns[2].position;          
+            startPoint = respawns[2].position;
+
+         
         }
 
         if (collider.gameObject.CompareTag("Finish4"))
         {            
-            startPoint = respawns[3].position;           
+            startPoint = respawns[3].position;
+          
         }
 
         if (collider.gameObject.CompareTag("Finish5"))
         {
             startPoint = respawns[6].position;
+            
         }
 
         if (collider.gameObject.CompareTag("Finish6"))
         {
             startPoint = respawns[7].position;
+            
         }
 
         if (collider.gameObject.CompareTag("Finish7"))
         {
             startPoint = respawns[8].position;
+            
         }
 
         if (collider.gameObject.CompareTag("Finish8"))
         {
             startPoint = respawns[9].position;
+           
         }
 
 
@@ -233,12 +242,18 @@ public class PlayerMovement : MonoBehaviour
         {            
             startPoint = respawns[4].position;
             transform.position = startPoint;
+            
         }
 
         if (collider.gameObject.CompareTag("Unlock2"))
         {
             startPoint = respawns[5].position;
             transform.position = startPoint;
+        }
+
+        if (collider.gameObject.CompareTag("Box"))
+        {
+           
         }
 
         if (collider.gameObject.CompareTag("Level1"))

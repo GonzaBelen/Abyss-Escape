@@ -3,22 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ChangeCameras : MonoBehaviour
-{ 
-    Vector3 startPoint2;
-    [SerializeField] private Transform[] respawns2;
-
-    private void Start()
+{
+    
+    [SerializeField] private GameObject[] changePoint;
+    private CinemachineSwitch cine;
+    void Awake()
     {
-        startPoint2 = respawns2[0].position;
+        cine = GetComponent<CinemachineSwitch>();
     }
-
-    private void Update()
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (PlayerMovement.count == 1)
+        if (collider.gameObject.CompareTag("Player"))
         {
-            startPoint2 = respawns2[1].position;
-            transform.position = startPoint2;
-        }
-    }
 
+            cine.SwitchPriority();
+
+            changePoint[0].SetActive(false);
+            changePoint[1].SetActive(true);
+
+         
+        }
+
+    }
+  
 }
