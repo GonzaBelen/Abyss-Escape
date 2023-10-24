@@ -63,9 +63,6 @@
     <Compile Include="Assets\Scripts\ChangeCameras.cs" />
     <Compile Include="Assets\Scripts\CineMachine\CinemachineSwitch.cs" />
     <Compile Include="Assets\Scripts\PlayerSound1.cs" />
-    <Compile Include="Assets\Scripts\AudioController.cs" />
-    <Compile Include="Assets\Scripts\ControlSound.cs" />
-    <Compile Include="Assets\Scripts\Controlsoundp.cs" />
     <Compile Include="Assets\Scripts\Controls.cs" />
     <Compile Include="Assets\Scripts\Controls2.cs" />
     <Compile Include="Assets\Scripts\GrappleHook.cs" />

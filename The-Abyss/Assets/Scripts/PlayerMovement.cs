@@ -41,11 +41,11 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
 
     [Header("Sound")]
-   
-    //[SerializeField] private GameObject Sound; 
-    [SerializeField] private AudioClip jumpSound; 
-    //private AudioSource jumpSound;
-    [SerializeField]private AudioClip coinSound;
+ 
+    [SerializeField] private AudioClip jumpSound;
+    [SerializeField] private AudioClip coinSound;
+    [SerializeField] private AudioSource Music1;
+    [SerializeField] private AudioSource Music2;
 
     [Header("EasterEggs")]
     [SerializeField] private GameObject[] coin;
@@ -54,10 +54,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        
         count = 0;
-        //Sound.SetActive(true);
         canUnlock = false;
-        //jumpSound = GetComponent<AudioSource>();
+
         startPoint = respawns[0].position;
         rb2D = GetComponent<Rigidbody2D>();
         gh = GetComponent<GrappleHook>();
@@ -195,16 +195,13 @@ public class PlayerMovement : MonoBehaviour
         if (collider.gameObject.CompareTag("Finish2"))
         {
             startPoint = respawns[1].position;
-            
-            
-            
+    
         }
 
         if (collider.gameObject.CompareTag("Finish3"))
         {           
             startPoint = respawns[2].position;
 
-         
         }
 
         if (collider.gameObject.CompareTag("Finish4"))
@@ -237,6 +234,19 @@ public class PlayerMovement : MonoBehaviour
            
         }
 
+        if (collider.gameObject.CompareTag("Music1"))
+        {
+            Music1.Stop();
+            Music2.Play();
+
+        }
+
+        if (collider.gameObject.CompareTag("Music2"))
+        {
+            Debug.Log(PlayerMovement.count);
+            Music2.Stop();
+            Music1.Play();
+        }
 
         if (collider.gameObject.CompareTag("Unlock"))
         {            
@@ -249,11 +259,6 @@ public class PlayerMovement : MonoBehaviour
         {
             startPoint = respawns[5].position;
             transform.position = startPoint;
-        }
-
-        if (collider.gameObject.CompareTag("Box"))
-        {
-           
         }
 
         if (collider.gameObject.CompareTag("Level1"))

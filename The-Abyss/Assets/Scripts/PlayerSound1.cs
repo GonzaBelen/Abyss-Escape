@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerSound1 : MonoBehaviour
 {
   private AudioSource audioSource;
@@ -32,4 +33,5 @@ public class PlayerSound1 : MonoBehaviour
     public void ExecuteSound(AudioClip sonido){
         audioSource.PlayOneShot(sonido);
     }
+
 }
