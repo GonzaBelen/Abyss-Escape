@@ -79,19 +79,14 @@ public class Controls2 : MonoBehaviour
             controls[3].SetActive(false);
         }
 
-        if (collision.gameObject.CompareTag("Rock2"))
+        if (collision.gameObject.CompareTag("Rock3"))
         {
             controls[4].SetActive(false);
         }
 
-        if (collision.gameObject.CompareTag("Rock3"))
-        {
-            controls[5].SetActive(false);
-        }
-
         if (collision.gameObject.CompareTag("Rock4"))
         {
-            controls[6].SetActive(false);
+            controls[5].SetActive(false);
         }
 
       
