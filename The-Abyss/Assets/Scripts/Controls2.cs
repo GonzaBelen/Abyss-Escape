@@ -42,19 +42,15 @@ public class Controls2 : MonoBehaviour
             controls[3].SetActive(true);
         }
 
-        if (collision.gameObject.CompareTag("Rock2") && DestroyRock.pickaxe == true)
+
+        if (collision.gameObject.CompareTag("Rock3") && DestroyRock.pickaxe == true)
         {
             controls[4].SetActive(true);
         }
 
-        if (collision.gameObject.CompareTag("Rock3") && DestroyRock.pickaxe == true)
-        {
-            controls[5].SetActive(true);
-        }
-
         if (collision.gameObject.CompareTag("Rock4") && DestroyRock.pickaxe == true)
         {
-            controls[6].SetActive(true);
+            controls[5].SetActive(true);
         }
 
      
