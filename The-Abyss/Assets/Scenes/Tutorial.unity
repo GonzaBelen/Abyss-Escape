@@ -181,7 +181,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f1811873568a7e64e8bced23a28ac7c6, type: 3}
+    m_Font: {fileID: 12800000, guid: 706229dea13648c4596bd3b3f87772e7, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -574,7 +574,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f1811873568a7e64e8bced23a28ac7c6, type: 3}
+    m_Font: {fileID: 12800000, guid: 706229dea13648c4596bd3b3f87772e7, type: 3}
     m_FontSize: 14
     m_FontStyle: 1
     m_BestFit: 1
@@ -2035,7 +2035,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f1811873568a7e64e8bced23a28ac7c6, type: 3}
+    m_Font: {fileID: 12800000, guid: 706229dea13648c4596bd3b3f87772e7, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -2114,7 +2114,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f1811873568a7e64e8bced23a28ac7c6, type: 3}
+    m_Font: {fileID: 12800000, guid: 706229dea13648c4596bd3b3f87772e7, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -2135,6 +2135,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 435172639}
   m_CullTransparentMesh: 1
+--- !u!1 &450915219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 450915220}
+  m_Layer: 0
+  m_Name: Rocks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &450915220
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450915219}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1772130818}
+  - {fileID: 1363140238}
+  m_Father: {fileID: 1030378327}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &466137036
 GameObject:
   m_ObjectHideFlags: 0
@@ -3190,19 +3223,19 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 450915220}
     m_Modifications:
     - target: {fileID: 3805036720276632995, guid: 412c12ccf8db66942b872384b6add706, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 144.011
+      value: 125.459305
       objectReference: {fileID: 0}
     - target: {fileID: 3805036720276632995, guid: 412c12ccf8db66942b872384b6add706, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 124.253
+      value: 125.482895
       objectReference: {fileID: 0}
     - target: {fileID: 3805036720276632995, guid: 412c12ccf8db66942b872384b6add706, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.36055127
       objectReference: {fileID: 0}
     - target: {fileID: 3805036720276632995, guid: 412c12ccf8db66942b872384b6add706, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3210,15 +3243,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3805036720276632995, guid: 412c12ccf8db66942b872384b6add706, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3805036720276632995, guid: 412c12ccf8db66942b872384b6add706, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3805036720276632995, guid: 412c12ccf8db66942b872384b6add706, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3805036720276632995, guid: 412c12ccf8db66942b872384b6add706, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3234,7 +3267,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5016201073482656677, guid: 412c12ccf8db66942b872384b6add706, type: 3}
       propertyPath: m_Name
-      value: Rock (1)
+      value: Rock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3278,19 +3311,19 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 450915220}
     m_Modifications:
     - target: {fileID: 3805036720276632995, guid: 412c12ccf8db66942b872384b6add706, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 175.464
+      value: 156.91231
       objectReference: {fileID: 0}
     - target: {fileID: 3805036720276632995, guid: 412c12ccf8db66942b872384b6add706, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 129.241
+      value: 130.4709
       objectReference: {fileID: 0}
     - target: {fileID: 3805036720276632995, guid: 412c12ccf8db66942b872384b6add706, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.36055127
       objectReference: {fileID: 0}
     - target: {fileID: 3805036720276632995, guid: 412c12ccf8db66942b872384b6add706, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3298,15 +3331,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3805036720276632995, guid: 412c12ccf8db66942b872384b6add706, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3805036720276632995, guid: 412c12ccf8db66942b872384b6add706, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3805036720276632995, guid: 412c12ccf8db66942b872384b6add706, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3805036720276632995, guid: 412c12ccf8db66942b872384b6add706, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4080,6 +4113,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1741362466}
+  - {fileID: 450915220}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1043436195
@@ -4659,7 +4693,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f1811873568a7e64e8bced23a28ac7c6, type: 3}
+    m_Font: {fileID: 12800000, guid: 706229dea13648c4596bd3b3f87772e7, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -4943,6 +4977,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!4 &1363140238 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3805036720276632995, guid: 412c12ccf8db66942b872384b6add706, type: 3}
+  m_PrefabInstance: {fileID: 707133417}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1374485115
 GameObject:
   m_ObjectHideFlags: 0
@@ -5001,7 +5040,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f1811873568a7e64e8bced23a28ac7c6, type: 3}
+    m_Font: {fileID: 12800000, guid: 706229dea13648c4596bd3b3f87772e7, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 1
@@ -6134,7 +6173,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f1811873568a7e64e8bced23a28ac7c6, type: 3}
+    m_Font: {fileID: 12800000, guid: 706229dea13648c4596bd3b3f87772e7, type: 3}
     m_FontSize: 20
     m_FontStyle: 1
     m_BestFit: 1
@@ -6248,7 +6287,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f1811873568a7e64e8bced23a28ac7c6, type: 3}
+    m_Font: {fileID: 12800000, guid: 706229dea13648c4596bd3b3f87772e7, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -6444,7 +6483,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f1811873568a7e64e8bced23a28ac7c6, type: 3}
+    m_Font: {fileID: 12800000, guid: 706229dea13648c4596bd3b3f87772e7, type: 3}
     m_FontSize: 20
     m_FontStyle: 1
     m_BestFit: 1
@@ -13710,7 +13749,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f1811873568a7e64e8bced23a28ac7c6, type: 3}
+    m_Font: {fileID: 12800000, guid: 706229dea13648c4596bd3b3f87772e7, type: 3}
     m_FontSize: 40
     m_FontStyle: 1
     m_BestFit: 1
@@ -13779,6 +13818,11 @@ Transform:
   - {fileID: 1547307288}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1772130818 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3805036720276632995, guid: 412c12ccf8db66942b872384b6add706, type: 3}
+  m_PrefabInstance: {fileID: 753444869}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1778741754
 GameObject:
   m_ObjectHideFlags: 0
@@ -14663,7 +14707,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f1811873568a7e64e8bced23a28ac7c6, type: 3}
+    m_Font: {fileID: 12800000, guid: 706229dea13648c4596bd3b3f87772e7, type: 3}
     m_FontSize: 40
     m_FontStyle: 1
     m_BestFit: 1
@@ -14927,5 +14971,3 @@ SceneRoots:
   - {fileID: 2125776988}
   - {fileID: 5168948}
   - {fileID: 2118433747}
-  - {fileID: 753444869}
-  - {fileID: 707133417}
