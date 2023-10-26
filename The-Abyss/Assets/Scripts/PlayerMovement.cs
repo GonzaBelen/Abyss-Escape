@@ -43,13 +43,13 @@ public class PlayerMovement : MonoBehaviour
     [Header("Sound")]
  
     [SerializeField] private AudioClip jumpSound;
-    [SerializeField] private AudioClip coinSound;
+    
     [SerializeField] private AudioSource Music1;
     [SerializeField] private AudioSource Music2;
 
     [Header("EasterEggs")]
-    [SerializeField] private GameObject[] coin;
-    [SerializeField] private int coins = 0;
+    //[SerializeField] private GameObject[] coin;
+    //[SerializeField] private int coins = 0;
     public static bool canUnlock; 
 
     private void Start()
@@ -270,13 +270,6 @@ public class PlayerMovement : MonoBehaviour
         {
             
             SceneManager.LoadScene(3);
-        }
-
-        if (collider.gameObject.CompareTag("Coin"))
-        {
-            PlayerSound1.Instance.ExecuteSound(coinSound);
-            coins = coins + 1;
-            Destroy(collider.gameObject);
         }
 
         if (collider.gameObject.CompareTag("Key"))
