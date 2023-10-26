@@ -50,7 +50,8 @@ public class PlayerMovement : MonoBehaviour
     [Header("EasterEggs")]
     //[SerializeField] private GameObject[] coin;
     //[SerializeField] private int coins = 0;
-    public static bool canUnlock; 
+    public static bool canUnlock;
+    private Rubys ruby; 
 
     private void Start()
     {
@@ -68,6 +69,8 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
 
         grappleHook = GetComponent<GrappleHook>();
+
+        ruby = GetComponent<Rubys>();
     }
 
     private void Update()
@@ -278,6 +281,12 @@ public class PlayerMovement : MonoBehaviour
             Destroy(collider.gameObject);
         }
 
+         if (collider.gameObject.CompareTag("Coin"))
+        {
+            
+            Invoke("Delay2", 1.5f);
+        }
+
        
     }
 
@@ -300,5 +309,10 @@ public class PlayerMovement : MonoBehaviour
     private void Delay()
     {
         this.gameObject.SetActive(true);
+    }
+
+     private void Delay2()
+    {
+        ruby.Destroy();
     }
 }

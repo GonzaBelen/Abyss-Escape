@@ -11,12 +11,12 @@ public class Rubys : MonoBehaviour
     [SerializeField] private float amount;
 
     [SerializeField] private Counter counter;
-    [SerializeField] private GameObject image;
-    private bool state;
+    [SerializeField] public GameObject image;
+
 
     void Start()
     {
-        state = false;
+       
     }
 
     private void OnTriggerEnter2D(Collider2D collider){
@@ -24,29 +24,27 @@ public class Rubys : MonoBehaviour
           if (collider.gameObject.CompareTag("Player"))
         {
             image.SetActive(true);
-            state = true;
 
             counter.AddAmount(amount);
 
             PlayerSound1.Instance.ExecuteSound(rubySound);
             rubys = rubys + 1;
+
             Destroy(this.gameObject);
+            
         }
     }
 
-    void Update()
+    private void Update()
     {
-        if(state == true){ 
-
-        Invoke("Delay", 1);
-        }
+       
     }
 
-    private void Delay()
-    {
-        image.SetActive(false);
-    }
+    public void Destroy(){
+        
+         image.SetActive(false);
 
+    }
     
  
 }

@@ -1714,6 +1714,7 @@ MonoBehaviour:
   amount: 0
   counter: {fileID: 0}
   image: {fileID: 0}
+  state: 0
 --- !u!4 &177606410 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7035060443679940939, guid: e4c063e1a92bb164a85f677c9aadf344, type: 3}
@@ -23007,7 +23008,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 2
+    widthMultiplier: 3
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -23231,6 +23232,7 @@ MonoBehaviour:
   jumpSound: {fileID: 8300000, guid: 1ea68773bf2612a43952146cc877434e, type: 3}
   Music1: {fileID: 0}
   Music2: {fileID: 0}
+  ruby: {fileID: 2100287767}
 --- !u!114 &711769909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32103,6 +32105,7 @@ MonoBehaviour:
   amount: 1
   counter: {fileID: 1894809652}
   image: {fileID: 2005910845}
+  state: 0
 --- !u!4 &2107619620 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7035060443679940939, guid: e4c063e1a92bb164a85f677c9aadf344, type: 3}
