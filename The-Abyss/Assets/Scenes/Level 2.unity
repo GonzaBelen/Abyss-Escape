@@ -14931,6 +14931,7 @@ GameObject:
   - component: {fileID: 711769909}
   - component: {fileID: 711769906}
   - component: {fileID: 711769902}
+  - component: {fileID: 711769911}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -14975,7 +14976,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 74af926db3a5296478b79dc91fce399f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15001,7 +15002,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1
+    widthMultiplier: 3
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -15019,8 +15020,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0.9607843, b: 0, a: 1}
-      key1: {r: 1, g: 0.9607843, b: 0, a: 1}
+      key0: {r: 0.764151, g: 0.764151, b: 0.764151, a: 1}
+      key1: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -15285,6 +15286,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &711769911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711769900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebae3836b4e1a874492e060bd2f8cc83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textures:
+  - {fileID: 2800000, guid: 6eec07f09e943304c98e31e353d9d796, type: 3}
+  - {fileID: 2800000, guid: 71ad5f6e5fc89e845aed0de812d6d0a0, type: 3}
+  - {fileID: 2800000, guid: 86e87c3040f59a74e9621cf3a922c1bc, type: 3}
+  - {fileID: 2800000, guid: 32646498efcf7004d85d4a315163190b, type: 3}
+  fps: 30
 --- !u!1 &725076460
 GameObject:
   m_ObjectHideFlags: 3
