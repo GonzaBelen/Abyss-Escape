@@ -48,10 +48,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private AudioSource Music2;
 
     [Header("EasterEggs")]
-    //[SerializeField] private GameObject[] coin;
-    //[SerializeField] private int coins = 0;
     public static bool canUnlock;
-    private Rubys ruby; 
+  
+    [SerializeField] public GameObject image;
 
     private void Start()
     {
@@ -70,7 +69,7 @@ public class PlayerMovement : MonoBehaviour
 
         grappleHook = GetComponent<GrappleHook>();
 
-        ruby = GetComponent<Rubys>();
+        
     }
 
     private void Update()
@@ -111,6 +110,7 @@ public class PlayerMovement : MonoBehaviour
             StopRun();
             releasedShiftInAir = false;
         }
+
     }
 
     private void FixedUpdate()
@@ -146,7 +146,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (grounded && jump)
         {
-            PlayerSound1.Instance.ExecuteSound(jumpSound);  
+            PlayerSound1.Instance.ExecuteSound(jumpSound);
             grounded = false;
             rb2D.AddForce(new Vector2(0f, actualJumpForce));    
                   
@@ -283,8 +283,8 @@ public class PlayerMovement : MonoBehaviour
 
          if (collider.gameObject.CompareTag("Coin"))
         {
-            
-            Invoke("Delay2", 1.5f);
+            image.SetActive(true);
+            Invoke("Delay2", 2f);
         }
 
        
@@ -313,6 +313,7 @@ public class PlayerMovement : MonoBehaviour
 
      private void Delay2()
     {
-        ruby.Destroy();
+        image.SetActive(false);
+        
     }
 }
