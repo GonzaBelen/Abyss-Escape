@@ -275,6 +275,12 @@ public class PlayerMovement : MonoBehaviour
             SceneManager.LoadScene(3);
         }
 
+        if (collider.gameObject.CompareTag("End2"))
+        {
+
+            SceneManager.LoadScene(4);
+        }
+
         if (collider.gameObject.CompareTag("Key"))
         {
             canUnlock = true;

@@ -35,6 +35,7 @@ TagManager:
   - Music2
   - Rock3
   - Rock4
+  - End2
   layers:
   - Default
   - TransparentFX
