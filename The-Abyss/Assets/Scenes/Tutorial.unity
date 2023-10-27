@@ -7405,7 +7405,7 @@ Transform:
   m_GameObject: {fileID: 1465420577}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 66.3, y: 119.2, z: 0.36055127}
+  m_LocalPosition: {x: 66.8, y: 119.1, z: 0.36055127}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7513,6 +7513,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   jumpSound: {fileID: 8300000, guid: 1ea68773bf2612a43952146cc877434e, type: 3}
+  deathSound: {fileID: 8300000, guid: aa40a824cf05eaa458ef70946e2d38ae, type: 3}
+  keySound: {fileID: 0}
+  key2Sound: {fileID: 0}
   Music1: {fileID: 519420035}
   Music2: {fileID: 1778741757}
   image: {fileID: 0}
@@ -7530,6 +7533,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioHit: 1.15
   buttonHit: 101
+  rockSound: {fileID: 8300000, guid: 750d22c5e0f0d3842a998856e9423d9a, type: 3}
+  pickSound: {fileID: 8300000, guid: 183db78400b986e4a81f71cf865b4fad, type: 3}
 --- !u!212 &1465420586
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16373,7 +16378,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 36887355b119d3648b44285dc20620fa, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2a8d5a5946667a54bb9601e428ba2172, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.208
   m_Pitch: 1

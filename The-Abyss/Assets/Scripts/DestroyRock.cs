@@ -8,6 +8,8 @@ public class DestroyRock : MonoBehaviour
     [SerializeField] private float radioHit  = 1.15f; 
     [SerializeField] private KeyCode buttonHit = KeyCode.E;
     public static bool pickaxe;
+    [SerializeField] private AudioClip rockSound;
+    [SerializeField] private AudioClip pickSound;
 
     private void Start(){
         
@@ -31,6 +33,8 @@ public class DestroyRock : MonoBehaviour
 
         foreach (Collider2D collider in colliders)
         {
+            
+
             if (collider.CompareTag("Rock"))
             {
                 destroyRock(collider.gameObject);
@@ -54,7 +58,8 @@ public class DestroyRock : MonoBehaviour
     }
 
     private void destroyRock(GameObject Rock)
-    {       
+    {
+        PlayerSound1.Instance.ExecuteSound(rockSound);
         Destroy(Rock);
     }
     private void OnDrawGizmosSelected()
@@ -67,6 +72,7 @@ public class DestroyRock : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("AccessRock2"))
         {
+            PlayerSound1.Instance.ExecuteSound(pickSound);
             pickaxe = true;
             Destroy(collision.gameObject);
         }

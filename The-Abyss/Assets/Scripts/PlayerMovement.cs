@@ -43,7 +43,9 @@ public class PlayerMovement : MonoBehaviour
     [Header("Sound")]
  
     [SerializeField] private AudioClip jumpSound;
-    
+    [SerializeField] private AudioClip deathSound;
+    [SerializeField] private AudioClip keySound;
+    [SerializeField] private AudioClip key2Sound;
     [SerializeField] private AudioSource Music1;
     [SerializeField] private AudioSource Music2;
 
@@ -184,9 +186,12 @@ public class PlayerMovement : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.CompareTag("Finish"))
-        {           
+        {
+            PlayerSound1.Instance.ExecuteSound(deathSound);
+            this.gameObject.SetActive(false);
             transform.position = startPoint;
             grappleHook.ResetGrapple();
+            Invoke("Delay", 1.5f);
         }
 
         if (collider.gameObject.CompareTag("Finish1"))
@@ -283,6 +288,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (collider.gameObject.CompareTag("Key"))
         {
+            PlayerSound1.Instance.ExecuteSound(keySound);
             canUnlock = true;
             Destroy(collider.gameObject);
         }
@@ -300,14 +306,16 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            PlayerSound1.Instance.ExecuteSound(deathSound);
             this.gameObject.SetActive(false);
             transform.position = startPoint;
             grappleHook.ResetGrapple();
-            Invoke("Delay", 0.5f);
+            Invoke("Delay", 1.5f);
         }
 
         if (collision.gameObject.CompareTag("SecretWall") && canUnlock)
         {
+            PlayerSound1.Instance.ExecuteSound(key2Sound);
             collision.gameObject.SetActive(false);
         }    
     }
