@@ -8,7 +8,7 @@ public class SwitchScene : MonoBehaviour
   
     private void Start()
     {
-        
+       
     }
   
     public void Play()
