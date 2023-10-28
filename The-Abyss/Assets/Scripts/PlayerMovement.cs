@@ -271,19 +271,19 @@ public class PlayerMovement : MonoBehaviour
 
         if (collider.gameObject.CompareTag("Level1"))
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
 
         if (collider.gameObject.CompareTag("End"))
         {
             
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(4);
         }
 
         if (collider.gameObject.CompareTag("End2"))
         {
 
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(5);
         }
 
         if (collider.gameObject.CompareTag("Key"))
