@@ -1,22 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+
 
 public class Counter : MonoBehaviour
 {
-    private float amount;
-    private TextMeshProUGUI textMesh;
+
+    public static Counter Instance;
+
+    public float amount;
     
-    private void Start()
+
+    private void Awake()
     {
-        textMesh = GetComponent<TextMeshProUGUI>();
+
+        if (Counter.Instance == null)
+        {
+            Counter.Instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
-   
-    private void Update()
+    private void Start()
     {
-        textMesh.text = amount.ToString("0");
+        
     }
 
     public void AddAmount(float amountEntry){

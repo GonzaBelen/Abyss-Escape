@@ -51,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("EasterEggs")]
     public static bool canUnlock;
-  
+    private Rubys rubyCounter;
     [SerializeField] public GameObject image;
 
     private void Start()
@@ -276,7 +276,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (collider.gameObject.CompareTag("End"))
         {
-            
+           
             SceneManager.LoadScene(4);
         }
 

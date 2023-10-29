@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\Rubys.cs" />
     <Compile Include="Assets\Scripts\DestroyRock.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
+    <Compile Include="Assets\Scripts\TextRubys.cs" />
     <Compile Include="Assets\Scripts\ChangeCameras.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />

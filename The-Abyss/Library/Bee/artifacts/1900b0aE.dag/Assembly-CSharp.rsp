@@ -385,6 +385,7 @@
 "Assets/Scripts/Rubys.cs"
 "Assets/Scripts/SecretRooms.cs"
 "Assets/Scripts/SwitchScene.cs"
+"Assets/Scripts/TextRubys.cs"
 "Assets/Scripts/Texts.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"

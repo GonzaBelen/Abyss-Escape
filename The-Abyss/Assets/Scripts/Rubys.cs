@@ -6,13 +6,13 @@ public class Rubys : MonoBehaviour
 {
     [SerializeField] private AudioClip rubySound;
 
-    private int rubys;
+    public int rubys;
    
     
     [SerializeField] private float amount;
 
 
-    [SerializeField] private Counter counter;
+    //[SerializeField] private Counter counter;
     
 
 
@@ -26,10 +26,10 @@ public class Rubys : MonoBehaviour
           if (collider.gameObject.CompareTag("Player"))
         {
           
-            counter.AddAmount(amount);
+            Counter.Instance.AddAmount(amount);
 
             PlayerSound1.Instance.ExecuteSound(rubySound);
-            rubys = rubys + 1;
+            //rubys = rubys + 1;
 
             Destroy(this.gameObject);
             
