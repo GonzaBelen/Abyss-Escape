@@ -71,20 +71,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -137,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 630b12df9d6ab6b4e9a2a6d627726f58
-      internalID: -54051821
+      spriteID: d1ed5b055be0bd149bcded8453ba84e3
+      internalID: -837206380
       vertices: []
       indices: 
       edges: []
@@ -158,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79506a5ea5cd438498d41441fa080565
-      internalID: 1857233547
+      spriteID: 55a8e22564cf5ce4d8f14710e1af5637
+      internalID: 1541712752
       vertices: []
       indices: 
       edges: []
@@ -175,8 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Boton_0: -54051821
-      Boton_1: 1857233547
+      Boton_0: -837206380
+      Boton_1: 1541712752
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

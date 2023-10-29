@@ -19,6 +19,8 @@ public class Texts : MonoBehaviour
     private int lineIndex;
 
     [SerializeField] private GameObject scene;
+    private DesactiveAni ani;
+    
 
     //private int countText = 0; 
 
@@ -67,10 +69,11 @@ public class Texts : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.E)){
 
-              if(!didDialogueStart){ 
+            
+
+              if (!didDialogueStart){
 
                 
-
                 StartDialogue();
 
             }
@@ -84,11 +87,5 @@ public class Texts : MonoBehaviour
             }
         }
 
-
-        /*if(countText == 4){
-
-            SceneManager.LoadScene(2);
-        }
-        */
     }
 }
