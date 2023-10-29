@@ -81,6 +81,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -110,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fondo Paz 360x202_0
+      name: BackgroundPeace_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47ef34b4e6154a140b278cb2a6dcdc07
-      internalID: -359596704
+      spriteID: 0f605cfde71e98f49b628fa25eb9a4e4
+      internalID: 1396647014
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fondo Paz 360x202_1
+      name: BackgroundPeace_1
       rect:
         serializedVersion: 2
         x: 360
@@ -145,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 386a96ea2c2a9694aad986c1f41011a9
-      internalID: -2129253440
+      spriteID: e7a08b9cda87856418b606f866b27970
+      internalID: -635962480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fondo Paz 360x202_2
+      name: BackgroundPeace_2
       rect:
         serializedVersion: 2
         x: 720
@@ -166,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 111477fdec5a05746a7d79180dd4cb39
-      internalID: 1160254029
+      spriteID: e8853bb6881c1aa43a67f466f8c0c20d
+      internalID: 972740686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fondo Paz 360x202_3
+      name: BackgroundPeace_3
       rect:
         serializedVersion: 2
         x: 1080
@@ -187,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f03b983ac7e1f9740b4c4f4a71c07682
-      internalID: -1306388048
+      spriteID: 3b7fc8a5a520c6a45bd95ca683184d5a
+      internalID: -988778092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fondo Paz 360x202_4
+      name: BackgroundPeace_4
       rect:
         serializedVersion: 2
         x: 1440
@@ -208,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6648af054039b1442acce1e4af2f9db6
-      internalID: 1179505274
+      spriteID: ab1aeceba12e5f9479edb06a21b59b3c
+      internalID: 807448769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fondo Paz 360x202_5
+      name: BackgroundPeace_5
       rect:
         serializedVersion: 2
         x: 1800
@@ -229,14 +242,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf040ba20daa90d4da1ec4b540467a75
-      internalID: 59694409
+      spriteID: e52ab4f43ffc93543828388409363917
+      internalID: 249441178
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fondo Paz 360x202_6
+      name: BackgroundPeace_6
       rect:
         serializedVersion: 2
         x: 2160
@@ -250,8 +263,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07ae203741c165e4ea9aed84f9d4a551
-      internalID: 441147949
+      spriteID: 45e94724e22ace442bb86fc2d6766539
+      internalID: 914017533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundPeace_7
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 0
+        width: 360
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a88c156e21a68c14a9a89ec968a8e905
+      internalID: -126543292
       vertices: []
       indices: 
       edges: []
@@ -267,13 +301,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Fondo Paz 360x202_0: -359596704
-      Fondo Paz 360x202_1: -2129253440
-      Fondo Paz 360x202_2: 1160254029
-      Fondo Paz 360x202_3: -1306388048
-      Fondo Paz 360x202_4: 1179505274
-      Fondo Paz 360x202_5: 59694409
-      Fondo Paz 360x202_6: 441147949
+      BackgroundPeace_0: 1396647014
+      BackgroundPeace_1: -635962480
+      BackgroundPeace_2: 972740686
+      BackgroundPeace_3: -988778092
+      BackgroundPeace_4: 807448769
+      BackgroundPeace_5: 249441178
+      BackgroundPeace_6: 914017533
+      BackgroundPeace_7: -126543292
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
