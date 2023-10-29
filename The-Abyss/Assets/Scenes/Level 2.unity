@@ -4609,7 +4609,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -555.58264, y: 427}
+  m_AnchoredPosition: {x: -520.5826, y: 432}
   m_SizeDelta: {x: 199.4416, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &654882468
@@ -23259,7 +23259,7 @@ LineRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 0.9150943, g: 0.9150943, b: 0.9150943, a: 1}
-      key1: {r: 1, g: 0.96153843, b: 0, a: 1}
+      key1: {r: 0.3962264, g: 0.3962264, b: 0.3962264, a: 1}
       key2: {r: 1, g: 0.9607843, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -24375,7 +24375,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -835, y: 485}
+  m_AnchoredPosition: {x: -829, y: 490}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &770134610
