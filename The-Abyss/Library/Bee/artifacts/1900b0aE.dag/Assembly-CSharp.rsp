@@ -377,6 +377,8 @@
 "Assets/Scripts/Controls2.cs"
 "Assets/Scripts/Counter.cs"
 "Assets/Scripts/DestroyRock.cs"
+"Assets/Scripts/Doors.cs"
+"Assets/Scripts/Doors1.cs"
 "Assets/Scripts/Enemy.cs"
 "Assets/Scripts/Enemy1.cs"
 "Assets/Scripts/GrappleHook.cs"

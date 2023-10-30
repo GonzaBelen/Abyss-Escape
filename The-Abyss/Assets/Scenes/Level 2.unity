@@ -3014,6 +3014,37 @@ Transform:
   - {fileID: 133860861}
   m_Father: {fileID: 909514156}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &392250333
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 392250334}
+  m_Layer: 0
+  m_Name: Level5 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &392250334
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392250333}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 179.89, y: 136.14, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1635855318}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &393405389
 GameObject:
   m_ObjectHideFlags: 3
@@ -4735,7 +4766,7 @@ GameObject:
   - component: {fileID: 673978449}
   m_Layer: 0
   m_Name: Level6End
-  m_TagString: Finish4
+  m_TagString: Finish9
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23461,6 +23492,7 @@ MonoBehaviour:
   - {fileID: 75794403}
   - {fileID: 555966222}
   - {fileID: 1584949510}
+  - {fileID: 392250334}
   jumpSound: {fileID: 8300000, guid: 1ea68773bf2612a43952146cc877434e, type: 3}
   deathSound: {fileID: 8300000, guid: aa40a824cf05eaa458ef70946e2d38ae, type: 3}
   keySound: {fileID: 8300000, guid: 7a22641e17c5bc94aadb43fbfa602684, type: 3}
@@ -29600,7 +29632,7 @@ GameObject:
   - component: {fileID: 1616396561}
   m_Layer: 0
   m_Name: Limit finish
-  m_TagString: End2
+  m_TagString: End
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29832,6 +29864,7 @@ Transform:
   - {fileID: 730564455}
   - {fileID: 1584949510}
   - {fileID: 860645997}
+  - {fileID: 392250334}
   - {fileID: 75794403}
   - {fileID: 555966222}
   m_Father: {fileID: 0}
