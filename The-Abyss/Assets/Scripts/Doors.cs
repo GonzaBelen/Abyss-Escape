@@ -31,7 +31,7 @@ public class Doors : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && activator)
         {
-            SceneManager.LoadScene(7);
+            SceneManager.LoadScene(8);
         }
     }
 

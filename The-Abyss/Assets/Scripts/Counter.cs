@@ -14,9 +14,9 @@ public class Counter : MonoBehaviour
     private void Awake()
     {
 
-        if (Counter.Instance == null)
+        if (Instance == null)
         {
-            Counter.Instance = this;
+            Instance = this;
             DontDestroyOnLoad(this.gameObject);
         }
         else

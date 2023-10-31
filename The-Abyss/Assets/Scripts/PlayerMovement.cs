@@ -113,6 +113,16 @@ public class PlayerMovement : MonoBehaviour
             releasedShiftInAir = false;
         }
 
+        if (Input.GetKeyUp(KeyCode.R))
+        {
+            PlayerSound1.Instance.ExecuteSound(deathSound);
+            this.gameObject.SetActive(false);
+            StopRun();
+            transform.position = startPoint;
+            grappleHook.ResetGrapple();
+            Invoke("Delay", 1.5f);
+        }
+
     }
 
     private void FixedUpdate()
@@ -190,6 +200,7 @@ public class PlayerMovement : MonoBehaviour
             PlayerSound1.Instance.ExecuteSound(deathSound);
             this.gameObject.SetActive(false);
             transform.position = startPoint;
+            StopRun();
             grappleHook.ResetGrapple();
             Invoke("Delay", 1.5f);
         }
@@ -315,6 +326,7 @@ public class PlayerMovement : MonoBehaviour
             PlayerSound1.Instance.ExecuteSound(deathSound);
             this.gameObject.SetActive(false);
             transform.position = startPoint;
+            StopRun();
             grappleHook.ResetGrapple();
             Invoke("Delay", 1.5f);
         }
