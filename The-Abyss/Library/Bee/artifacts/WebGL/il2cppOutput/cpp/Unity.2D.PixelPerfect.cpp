@@ -22,8 +22,10 @@ struct InterfaceFuncInvoker0
 	}
 };
 
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
 struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184;
 struct CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B;
+struct CinemachinePixelPerfect_tE6CCF3C73CBDD7F9723CCC8A7D72FAB5AD7657D7;
 struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3;
 struct IPixelPerfectCamera_tB4C3F4D97915BC1D1D31D68788C8F4290B94A987;
 struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71;
@@ -34,9 +36,12 @@ struct RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27;
 struct String_t;
 struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700;
 struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1;
+struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_t0C275585D2E63B9638E5C799091C73FF74B30CD5;
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 struct CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD;
 
+IL2CPP_EXTERN_C RuntimeClass* ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IPixelPerfectCamera_tB4C3F4D97915BC1D1D31D68788C8F4290B94A987_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var;
@@ -44,10 +49,14 @@ IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_i
 IL2CPP_EXTERN_C RuntimeClass* PixelPerfectCameraInternal_t3A785975106C548143FC2C057233A72DC250FEFE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* PixelPerfectCamera_t7B0849F4AB5E6399719BE7C3B330BCBBA3AAF7A9_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t39B215207DCDFB3656BE676BB350E2626B3C2C84____47D6D5CB9C1516368F4D48F31165E2EB9D04D22FB9375302B8133DD308A02429_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t39B215207DCDFB3656BE676BB350E2626B3C2C84____B6802E875EB7B71B2695090BC5E6AC9DCD3843EB0E6BF7C21CFB45D12D167F67_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral69D2BC13326043EFBE8498680B311F3B34E06698;
+IL2CPP_EXTERN_C String_t* _stringLiteral6B44A7675031FCAC57E28AD1002F65360C76AFF2;
 IL2CPP_EXTERN_C String_t* _stringLiteral6E3C394542AFDC0953291817DE5BAA9A9329CF27;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisCamera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_m64AC6C06DD93C5FB249091FEC84FA8475457CCC4_RuntimeMethod_var;
 
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
 
 IL2CPP_EXTERN_C_BEGIN
 IL2CPP_EXTERN_C_END
@@ -60,10 +69,16 @@ IL2CPP_EXTERN_C_END
 struct U3CModuleU3E_t914B895F17EB87E4ACCC552837D71D20AF85C205 
 {
 };
+struct U3CPrivateImplementationDetailsU3E_t39B215207DCDFB3656BE676BB350E2626B3C2C84  : public RuntimeObject
+{
+};
 struct String_t  : public RuntimeObject
 {
 	int32_t ____stringLength;
 	Il2CppChar ____firstChar;
+};
+struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_t0C275585D2E63B9638E5C799091C73FF74B30CD5  : public RuntimeObject
+{
 };
 struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F  : public RuntimeObject
 {
@@ -77,6 +92,10 @@ struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
 struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22 
 {
 	bool ___m_value;
+};
+struct Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3 
+{
+	uint8_t ___m_value;
 };
 struct Color_tD001788D726C3A7F1379BEED0260B9591F440C1F 
 {
@@ -150,6 +169,60 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915
 		uint8_t Void_t4861ACF8F4594C3437BB48B6E56783494B843915__padding[1];
 	};
 };
+#pragma pack(push, tp, 1)
+struct __StaticArrayInitTypeSizeU3D170_t31990ADE06AF98816AE5BBEADA3CCE7E87736A56 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t __StaticArrayInitTypeSizeU3D170_t31990ADE06AF98816AE5BBEADA3CCE7E87736A56__padding[170];
+	};
+};
+#pragma pack(pop, tp)
+#pragma pack(push, tp, 1)
+struct __StaticArrayInitTypeSizeU3D289_tC5C9CC63948A355A42147524DE6E618F27FBA5BE 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t __StaticArrayInitTypeSizeU3D289_tC5C9CC63948A355A42147524DE6E618F27FBA5BE__padding[289];
+	};
+};
+#pragma pack(pop, tp)
+struct MonoScriptData_t799301C41365248339AE73896ADB30CC7571E0AD 
+{
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___FilePathsData;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___TypesData;
+	int32_t ___TotalTypes;
+	int32_t ___TotalFiles;
+	bool ___IsEditorOnly;
+};
+struct MonoScriptData_t799301C41365248339AE73896ADB30CC7571E0AD_marshaled_pinvoke
+{
+	Il2CppSafeArray* ___FilePathsData;
+	Il2CppSafeArray* ___TypesData;
+	int32_t ___TotalTypes;
+	int32_t ___TotalFiles;
+	int32_t ___IsEditorOnly;
+};
+struct MonoScriptData_t799301C41365248339AE73896ADB30CC7571E0AD_marshaled_com
+{
+	Il2CppSafeArray* ___FilePathsData;
+	Il2CppSafeArray* ___TypesData;
+	int32_t ___TotalTypes;
+	int32_t ___TotalFiles;
+	int32_t ___IsEditorOnly;
+};
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
 {
 	intptr_t ___m_CachedPtr;
@@ -180,6 +253,10 @@ struct PixelPerfectCameraInternal_t3A785975106C548143FC2C057233A72DC250FEFE  : p
 	float ___unitsPerPixel;
 	int32_t ___cinemachineVCamZoom;
 };
+struct RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 
+{
+	intptr_t ___value;
+};
 struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
 {
 };
@@ -202,6 +279,9 @@ struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71  : public Behavio
 {
 	CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B* ___m_CancellationTokenSource;
 };
+struct CinemachinePixelPerfect_tE6CCF3C73CBDD7F9723CCC8A7D72FAB5AD7657D7  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+};
 struct PixelPerfectCamera_t7B0849F4AB5E6399719BE7C3B330BCBBA3AAF7A9  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 	int32_t ___m_AssetsPPU;
@@ -215,6 +295,11 @@ struct PixelPerfectCamera_t7B0849F4AB5E6399719BE7C3B330BCBBA3AAF7A9  : public Mo
 	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___m_Camera;
 	PixelPerfectCameraInternal_t3A785975106C548143FC2C057233A72DC250FEFE* ___m_Internal;
 	bool ___m_CinemachineCompatibilityMode;
+};
+struct U3CPrivateImplementationDetailsU3E_t39B215207DCDFB3656BE676BB350E2626B3C2C84_StaticFields
+{
+	__StaticArrayInitTypeSizeU3D170_t31990ADE06AF98816AE5BBEADA3CCE7E87736A56 ___47D6D5CB9C1516368F4D48F31165E2EB9D04D22FB9375302B8133DD308A02429;
+	__StaticArrayInitTypeSizeU3D289_tC5C9CC63948A355A42147524DE6E618F27FBA5BE ___B6802E875EB7B71B2695090BC5E6AC9DCD3843EB0E6BF7C21CFB45D12D167F67;
 };
 struct String_t_StaticFields
 {
@@ -264,10 +349,46 @@ struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_StaticFields
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031  : public RuntimeArray
+{
+	ALIGN_FIELD (8) uint8_t m_Items[1];
+
+	inline uint8_t GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline uint8_t* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, uint8_t value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline uint8_t GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline uint8_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, uint8_t value)
+	{
+		m_Items[index] = value;
+	}
+};
 
 
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B (RuntimeArray* ___0_array, RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 ___1_fldHandle, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2 (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PixelPerfectCameraInternal_CorrectCinemachineOrthoSize_mCD4C1B0EBDC7FBDE0A17AA8BE4F5EC1ABD574CED (PixelPerfectCameraInternal_t3A785975106C548143FC2C057233A72DC250FEFE* __this, float ___0_targetOrthoSize, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
@@ -310,8 +431,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Camera_get_aspect_m48BF8820EA2D55BE0D15
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D PixelPerfectCameraInternal_CalculatePostRenderPixelRect_mC41F2F6B554C0E28AB9344868E3B887118221B39 (PixelPerfectCameraInternal_t3A785975106C548143FC2C057233A72DC250FEFE* __this, float ___0_cameraAspect, int32_t ___1_screenWidth, int32_t ___2_screenHeight, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Camera_ResetAspect_mAC248F92A2CAC44E2D33EFC3D08AACA9BC3DCEBB (Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Camera_ResetWorldToCameraMatrix_m25E544C8F31680DC08C58F7416AFD77DA3DB3F91 (Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Math_Min_m53C488772A34D53917BCA2A491E79A0A5356ED52 (int32_t ___0_val1, int32_t ___1_val2, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Math_Max_m530EBA549AFD98CFC2BD29FE86C6376E67DF11CF (int32_t ___0_val1, int32_t ___1_val2, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Rect_set_width_m93B6217CF3EFF89F9B0C81F34D7345DE90B93E5A_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, float ___0_value, const RuntimeMethod* method) ;
@@ -330,6 +449,166 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_y_mC733E8D49F3CE21
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t799301C41365248339AE73896ADB30CC7571E0AD UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mAEF193637B3F0160FF34428A5856672E722ADFB4 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t39B215207DCDFB3656BE676BB350E2626B3C2C84____47D6D5CB9C1516368F4D48F31165E2EB9D04D22FB9375302B8133DD308A02429_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t39B215207DCDFB3656BE676BB350E2626B3C2C84____B6802E875EB7B71B2695090BC5E6AC9DCD3843EB0E6BF7C21CFB45D12D167F67_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	MonoScriptData_t799301C41365248339AE73896ADB30CC7571E0AD V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(MonoScriptData_t799301C41365248339AE73896ADB30CC7571E0AD));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)289));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = L_0;
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t39B215207DCDFB3656BE676BB350E2626B3C2C84____B6802E875EB7B71B2695090BC5E6AC9DCD3843EB0E6BF7C21CFB45D12D167F67_FieldInfo_var) };
+		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_1, L_2, NULL);
+		(&V_0)->___FilePathsData = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___FilePathsData), (void*)L_1);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)170));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = L_3;
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t39B215207DCDFB3656BE676BB350E2626B3C2C84____47D6D5CB9C1516368F4D48F31165E2EB9D04D22FB9375302B8133DD308A02429_FieldInfo_var) };
+		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_4, L_5, NULL);
+		(&V_0)->___TypesData = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___TypesData), (void*)L_4);
+		(&V_0)->___TotalFiles = 3;
+		(&V_0)->___TotalTypes = 4;
+		(&V_0)->___IsEditorOnly = (bool)0;
+		MonoScriptData_t799301C41365248339AE73896ADB30CC7571E0AD L_6 = V_0;
+		return L_6;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mA1CE7C388B9E7621276704218BEB499CC1FB55CE (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_t0C275585D2E63B9638E5C799091C73FF74B30CD5* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C void MonoScriptData_t799301C41365248339AE73896ADB30CC7571E0AD_marshal_pinvoke(const MonoScriptData_t799301C41365248339AE73896ADB30CC7571E0AD& unmarshaled, MonoScriptData_t799301C41365248339AE73896ADB30CC7571E0AD_marshaled_pinvoke& marshaled)
+{
+	marshaled.___FilePathsData = il2cpp_codegen_com_marshal_safe_array(IL2CPP_VT_I1, unmarshaled.___FilePathsData);
+	marshaled.___TypesData = il2cpp_codegen_com_marshal_safe_array(IL2CPP_VT_I1, unmarshaled.___TypesData);
+	marshaled.___TotalTypes = unmarshaled.___TotalTypes;
+	marshaled.___TotalFiles = unmarshaled.___TotalFiles;
+	marshaled.___IsEditorOnly = static_cast<int32_t>(unmarshaled.___IsEditorOnly);
+}
+IL2CPP_EXTERN_C void MonoScriptData_t799301C41365248339AE73896ADB30CC7571E0AD_marshal_pinvoke_back(const MonoScriptData_t799301C41365248339AE73896ADB30CC7571E0AD_marshaled_pinvoke& marshaled, MonoScriptData_t799301C41365248339AE73896ADB30CC7571E0AD& unmarshaled)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	unmarshaled.___FilePathsData = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_il2cpp_TypeInfo_var, marshaled.___FilePathsData);
+	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___FilePathsData), (void*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_il2cpp_TypeInfo_var, marshaled.___FilePathsData));
+	unmarshaled.___TypesData = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_il2cpp_TypeInfo_var, marshaled.___TypesData);
+	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___TypesData), (void*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_il2cpp_TypeInfo_var, marshaled.___TypesData));
+	int32_t unmarshaledTotalTypes_temp_2 = 0;
+	unmarshaledTotalTypes_temp_2 = marshaled.___TotalTypes;
+	unmarshaled.___TotalTypes = unmarshaledTotalTypes_temp_2;
+	int32_t unmarshaledTotalFiles_temp_3 = 0;
+	unmarshaledTotalFiles_temp_3 = marshaled.___TotalFiles;
+	unmarshaled.___TotalFiles = unmarshaledTotalFiles_temp_3;
+	bool unmarshaledIsEditorOnly_temp_4 = false;
+	unmarshaledIsEditorOnly_temp_4 = static_cast<bool>(marshaled.___IsEditorOnly);
+	unmarshaled.___IsEditorOnly = unmarshaledIsEditorOnly_temp_4;
+}
+IL2CPP_EXTERN_C void MonoScriptData_t799301C41365248339AE73896ADB30CC7571E0AD_marshal_pinvoke_cleanup(MonoScriptData_t799301C41365248339AE73896ADB30CC7571E0AD_marshaled_pinvoke& marshaled)
+{
+	il2cpp_codegen_com_destroy_safe_array(marshaled.___FilePathsData);
+	marshaled.___FilePathsData = NULL;
+	il2cpp_codegen_com_destroy_safe_array(marshaled.___TypesData);
+	marshaled.___TypesData = NULL;
+}
+IL2CPP_EXTERN_C void MonoScriptData_t799301C41365248339AE73896ADB30CC7571E0AD_marshal_com(const MonoScriptData_t799301C41365248339AE73896ADB30CC7571E0AD& unmarshaled, MonoScriptData_t799301C41365248339AE73896ADB30CC7571E0AD_marshaled_com& marshaled)
+{
+	marshaled.___FilePathsData = il2cpp_codegen_com_marshal_safe_array(IL2CPP_VT_I1, unmarshaled.___FilePathsData);
+	marshaled.___TypesData = il2cpp_codegen_com_marshal_safe_array(IL2CPP_VT_I1, unmarshaled.___TypesData);
+	marshaled.___TotalTypes = unmarshaled.___TotalTypes;
+	marshaled.___TotalFiles = unmarshaled.___TotalFiles;
+	marshaled.___IsEditorOnly = static_cast<int32_t>(unmarshaled.___IsEditorOnly);
+}
+IL2CPP_EXTERN_C void MonoScriptData_t799301C41365248339AE73896ADB30CC7571E0AD_marshal_com_back(const MonoScriptData_t799301C41365248339AE73896ADB30CC7571E0AD_marshaled_com& marshaled, MonoScriptData_t799301C41365248339AE73896ADB30CC7571E0AD& unmarshaled)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	unmarshaled.___FilePathsData = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_il2cpp_TypeInfo_var, marshaled.___FilePathsData);
+	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___FilePathsData), (void*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_il2cpp_TypeInfo_var, marshaled.___FilePathsData));
+	unmarshaled.___TypesData = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_il2cpp_TypeInfo_var, marshaled.___TypesData);
+	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___TypesData), (void*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_il2cpp_TypeInfo_var, marshaled.___TypesData));
+	int32_t unmarshaledTotalTypes_temp_2 = 0;
+	unmarshaledTotalTypes_temp_2 = marshaled.___TotalTypes;
+	unmarshaled.___TotalTypes = unmarshaledTotalTypes_temp_2;
+	int32_t unmarshaledTotalFiles_temp_3 = 0;
+	unmarshaledTotalFiles_temp_3 = marshaled.___TotalFiles;
+	unmarshaled.___TotalFiles = unmarshaledTotalFiles_temp_3;
+	bool unmarshaledIsEditorOnly_temp_4 = false;
+	unmarshaledIsEditorOnly_temp_4 = static_cast<bool>(marshaled.___IsEditorOnly);
+	unmarshaled.___IsEditorOnly = unmarshaledIsEditorOnly_temp_4;
+}
+IL2CPP_EXTERN_C void MonoScriptData_t799301C41365248339AE73896ADB30CC7571E0AD_marshal_com_cleanup(MonoScriptData_t799301C41365248339AE73896ADB30CC7571E0AD_marshaled_com& marshaled)
+{
+	il2cpp_codegen_com_destroy_safe_array(marshaled.___FilePathsData);
+	marshaled.___FilePathsData = NULL;
+	il2cpp_codegen_com_destroy_safe_array(marshaled.___TypesData);
+	marshaled.___TypesData = NULL;
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CinemachinePixelPerfect_OnEnable_m8F61B251CA3256600FAA6C2AC09CE2F38906122A (CinemachinePixelPerfect_tE6CCF3C73CBDD7F9723CCC8A7D72FAB5AD7657D7* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6B44A7675031FCAC57E28AD1002F65360C76AFF2);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(_stringLiteral6B44A7675031FCAC57E28AD1002F65360C76AFF2, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CinemachinePixelPerfect__ctor_m62B0EA6CEF2A6B8F810E3202E5EFA351ADDD486A (CinemachinePixelPerfect_tE6CCF3C73CBDD7F9723CCC8A7D72FAB5AD7657D7* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -1092,31 +1371,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PixelPerfectCameraInternal_CalculateCame
 		V_0 = L_1;
 		RuntimeObject* L_2 = __this->___m_Component;
 		int32_t L_3;
-		L_3 = InterfaceFuncInvoker0< int32_t >::Invoke(1, IPixelPerfectCamera_tB4C3F4D97915BC1D1D31D68788C8F4290B94A987_il2cpp_TypeInfo_var, L_2);
+		L_3 = InterfaceFuncInvoker0< int32_t >::Invoke(2, IPixelPerfectCamera_tB4C3F4D97915BC1D1D31D68788C8F4290B94A987_il2cpp_TypeInfo_var, L_2);
 		V_1 = L_3;
 		RuntimeObject* L_4 = __this->___m_Component;
 		int32_t L_5;
-		L_5 = InterfaceFuncInvoker0< int32_t >::Invoke(2, IPixelPerfectCamera_tB4C3F4D97915BC1D1D31D68788C8F4290B94A987_il2cpp_TypeInfo_var, L_4);
+		L_5 = InterfaceFuncInvoker0< int32_t >::Invoke(4, IPixelPerfectCamera_tB4C3F4D97915BC1D1D31D68788C8F4290B94A987_il2cpp_TypeInfo_var, L_4);
 		V_2 = L_5;
 		RuntimeObject* L_6 = __this->___m_Component;
 		bool L_7;
-		L_7 = InterfaceFuncInvoker0< bool >::Invoke(3, IPixelPerfectCamera_tB4C3F4D97915BC1D1D31D68788C8F4290B94A987_il2cpp_TypeInfo_var, L_6);
+		L_7 = InterfaceFuncInvoker0< bool >::Invoke(6, IPixelPerfectCamera_tB4C3F4D97915BC1D1D31D68788C8F4290B94A987_il2cpp_TypeInfo_var, L_6);
 		V_3 = L_7;
 		RuntimeObject* L_8 = __this->___m_Component;
 		bool L_9;
-		L_9 = InterfaceFuncInvoker0< bool >::Invoke(4, IPixelPerfectCamera_tB4C3F4D97915BC1D1D31D68788C8F4290B94A987_il2cpp_TypeInfo_var, L_8);
+		L_9 = InterfaceFuncInvoker0< bool >::Invoke(8, IPixelPerfectCamera_tB4C3F4D97915BC1D1D31D68788C8F4290B94A987_il2cpp_TypeInfo_var, L_8);
 		V_4 = L_9;
 		RuntimeObject* L_10 = __this->___m_Component;
 		bool L_11;
-		L_11 = InterfaceFuncInvoker0< bool >::Invoke(5, IPixelPerfectCamera_tB4C3F4D97915BC1D1D31D68788C8F4290B94A987_il2cpp_TypeInfo_var, L_10);
+		L_11 = InterfaceFuncInvoker0< bool >::Invoke(10, IPixelPerfectCamera_tB4C3F4D97915BC1D1D31D68788C8F4290B94A987_il2cpp_TypeInfo_var, L_10);
 		V_5 = L_11;
 		RuntimeObject* L_12 = __this->___m_Component;
 		bool L_13;
-		L_13 = InterfaceFuncInvoker0< bool >::Invoke(6, IPixelPerfectCamera_tB4C3F4D97915BC1D1D31D68788C8F4290B94A987_il2cpp_TypeInfo_var, L_12);
+		L_13 = InterfaceFuncInvoker0< bool >::Invoke(12, IPixelPerfectCamera_tB4C3F4D97915BC1D1D31D68788C8F4290B94A987_il2cpp_TypeInfo_var, L_12);
 		V_6 = L_13;
 		RuntimeObject* L_14 = __this->___m_Component;
 		bool L_15;
-		L_15 = InterfaceFuncInvoker0< bool >::Invoke(7, IPixelPerfectCamera_tB4C3F4D97915BC1D1D31D68788C8F4290B94A987_il2cpp_TypeInfo_var, L_14);
+		L_15 = InterfaceFuncInvoker0< bool >::Invoke(14, IPixelPerfectCamera_tB4C3F4D97915BC1D1D31D68788C8F4290B94A987_il2cpp_TypeInfo_var, L_14);
 		V_7 = L_15;
 		bool L_16 = V_6;
 		bool L_17 = V_5;
@@ -1590,7 +1869,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PixelPerfectCameraInternal_CorrectCinem
 	{
 		RuntimeObject* L_0 = __this->___m_Component;
 		bool L_1;
-		L_1 = InterfaceFuncInvoker0< bool >::Invoke(3, IPixelPerfectCamera_tB4C3F4D97915BC1D1D31D68788C8F4290B94A987_il2cpp_TypeInfo_var, L_0);
+		L_1 = InterfaceFuncInvoker0< bool >::Invoke(6, IPixelPerfectCamera_tB4C3F4D97915BC1D1D31D68788C8F4290B94A987_il2cpp_TypeInfo_var, L_0);
 		if (!L_1)
 		{
 			goto IL_0037;
@@ -1632,7 +1911,7 @@ IL_006f:
 	{
 		RuntimeObject* L_16 = __this->___m_Component;
 		bool L_17;
-		L_17 = InterfaceFuncInvoker0< bool >::Invoke(3, IPixelPerfectCamera_tB4C3F4D97915BC1D1D31D68788C8F4290B94A987_il2cpp_TypeInfo_var, L_16);
+		L_17 = InterfaceFuncInvoker0< bool >::Invoke(6, IPixelPerfectCamera_tB4C3F4D97915BC1D1D31D68788C8F4290B94A987_il2cpp_TypeInfo_var, L_16);
 		if (L_17)
 		{
 			goto IL_00a8;
@@ -1641,7 +1920,7 @@ IL_006f:
 	{
 		RuntimeObject* L_18 = __this->___m_Component;
 		bool L_19;
-		L_19 = InterfaceFuncInvoker0< bool >::Invoke(4, IPixelPerfectCamera_tB4C3F4D97915BC1D1D31D68788C8F4290B94A987_il2cpp_TypeInfo_var, L_18);
+		L_19 = InterfaceFuncInvoker0< bool >::Invoke(8, IPixelPerfectCamera_tB4C3F4D97915BC1D1D31D68788C8F4290B94A987_il2cpp_TypeInfo_var, L_18);
 		if (L_19)
 		{
 			goto IL_00a8;
@@ -1661,6 +1940,30 @@ IL_00a8:
 		return L_23;
 	}
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

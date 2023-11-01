@@ -29,6 +29,7 @@ ScriptsOnlyBuild:
     - Cinemachine.CinemachineComposer
     - Cinemachine.CinemachineFramingTransposer
     - Cinemachine.CinemachinePipeline
+    - Cinemachine.CinemachinePixelPerfect
     - Cinemachine.CinemachineStateDrivenCamera
     - Cinemachine.CinemachineStoryboard
     - Cinemachine.CinemachineTransposer
@@ -41,6 +42,8 @@ ScriptsOnlyBuild:
     - UnityEngine.U2D.Animation.SpriteSkinUpdateHelper
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    Unity.2D.PixelPerfect.dll:
+    - UnityEngine.U2D.PixelPerfectCamera
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridBrushEditor
@@ -48,6 +51,7 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
+    - UnityEditor.Tilemaps.GridSelectionMoveTool
     - UnityEditor.Tilemaps.PaintableSceneViewGrid
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
@@ -88,7 +92,6 @@ ScriptsOnlyBuild:
     - UnityEngine.Timeline.AnimationTrack
     - UnityEngine.Timeline.AudioPlayableAsset
     - UnityEngine.Timeline.AudioTrack
-    - UnityEngine.Timeline.SignalReceiver
     - UnityEngine.Timeline.TimelineAsset
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
@@ -140,7 +143,6 @@ ScriptsOnlyBuild:
     - UnityEngine.Timeline.AudioClipProperties
     - UnityEngine.Timeline.AudioMixerProperties
     - UnityEngine.Timeline.MarkerList
-    - UnityEngine.Timeline.SignalReceiver/EventKeyValue
     - UnityEngine.Timeline.TimelineAsset/EditorSettings
     - UnityEngine.Timeline.TimelineClip
     UnityEngine.CoreModule:
@@ -357,8 +359,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2692}
     - Class: 114
       Script: {instanceID: 2810}
-    - Class: 114
-      Script: {instanceID: 3128}
     - Class: 114
       Script: {instanceID: 3256}
     - Class: 114
@@ -820,6 +820,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2932}
     - Class: 114
+      Script: {instanceID: 3132}
+    - Class: 114
       Script: {instanceID: 3476}
     - Class: 114
       Script: {instanceID: 3752}
@@ -841,6 +843,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5808}
     - Class: 114
       Script: {instanceID: 6450}
+    - Class: 114
+      Script: {instanceID: 7076}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -995,8 +999,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3468}
     - Class: 114
       Script: {instanceID: 3476}
-    - Class: 114
-      Script: {instanceID: 3756}
     - Class: 114
       Script: {instanceID: 4158}
     - Class: 114

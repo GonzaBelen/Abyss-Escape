@@ -259,6 +259,12 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
+        if (collider.gameObject.CompareTag("Finish10"))
+        {
+            startPoint = respawns[11].position;
+
+        }
+
         if (collider.gameObject.CompareTag("Music1"))
         {
             Music1.Stop();
