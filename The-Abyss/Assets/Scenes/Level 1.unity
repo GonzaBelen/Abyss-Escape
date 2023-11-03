@@ -15885,6 +15885,8 @@ MonoBehaviour:
   Music1: {fileID: 0}
   Music2: {fileID: 0}
   image: {fileID: 418118963}
+  timecoyoteTime: 0.15
+  coyoteTime: 1
 --- !u!114 &711769909
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -54,6 +54,11 @@ public class PlayerMovement : MonoBehaviour
     private Rubys rubyCounter;
     [SerializeField] public GameObject image;
 
+    [Header("Coyote Time")]
+    [SerializeField] private float timecoyoteTime = 0.1f;
+    [SerializeField] private bool coyoteTime = false;
+    [SerializeField] private float tiempocoyoteTime;
+
     private void Start()
     {
         
@@ -97,11 +102,13 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
+      
+
         movementHor = Input.GetAxisRaw("Horizontal") * actualVelocity;
 
         animator.SetFloat("Horizontal", Mathf.Abs(movementHor));
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && coyoteTime)
         {
             jump = true;
              
@@ -123,6 +130,11 @@ public class PlayerMovement : MonoBehaviour
             Invoke("Delay", 1.5f);
         }
 
+        if(!grounded && coyoteTime){
+            tiempocoyoteTime += Time.deltaTime; 
+            if(tiempocoyoteTime > timecoyoteTime) coyoteTime = false;
+        }
+
     }
 
     private void FixedUpdate()
@@ -139,6 +151,11 @@ public class PlayerMovement : MonoBehaviour
         }
 
         jump = false;
+
+          if (grounded == true){
+            coyoteTime = true;
+            tiempocoyoteTime = 0;
+        }
     }
 
     private void Move(float move, bool jump)
