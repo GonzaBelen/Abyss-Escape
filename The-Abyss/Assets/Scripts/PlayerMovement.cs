@@ -108,7 +108,7 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("Horizontal", Mathf.Abs(movementHor));
 
-        if (Input.GetButtonDown("Jump") && coyoteTime)
+        if ((Input.GetButtonDown("Jump") && coyoteTime) || (Input.GetKeyDown(KeyCode.W) && coyoteTime))
         {
             jump = true;
              
@@ -120,7 +120,7 @@ public class PlayerMovement : MonoBehaviour
             releasedShiftInAir = false;
         }
 
-        if (Input.GetKeyUp(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R))
         {
             PlayerSound1.Instance.ExecuteSound(deathSound);
             this.gameObject.SetActive(false);

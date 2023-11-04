@@ -2666,7 +2666,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -35, y: -5}
+  m_AnchoredPosition: {x: -31, y: -30}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &445921345
@@ -15887,6 +15887,7 @@ MonoBehaviour:
   image: {fileID: 418118963}
   timecoyoteTime: 0.15
   coyoteTime: 1
+  tiempocoyoteTime: 0
 --- !u!114 &711769909
 MonoBehaviour:
   m_ObjectHideFlags: 0

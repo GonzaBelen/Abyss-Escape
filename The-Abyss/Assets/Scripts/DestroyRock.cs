@@ -6,7 +6,7 @@ public class DestroyRock : MonoBehaviour
 {
     
     [SerializeField] private float radioHit  = 1.15f; 
-    [SerializeField] private KeyCode buttonHit = KeyCode.E;
+    [SerializeField] private KeyCode buttonHit = KeyCode.Mouse1;
     public static bool pickaxe;
     [SerializeField] private AudioClip rockSound;
     [SerializeField] private AudioClip pickSound;
