@@ -102,8 +102,6 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-      
-
         movementHor = Input.GetAxisRaw("Horizontal") * actualVelocity;
 
         animator.SetFloat("Horizontal", Mathf.Abs(movementHor));
@@ -134,6 +132,7 @@ public class PlayerMovement : MonoBehaviour
             tiempocoyoteTime += Time.deltaTime; 
             if(tiempocoyoteTime > timecoyoteTime) coyoteTime = false;
         }
+
 
     }
 
