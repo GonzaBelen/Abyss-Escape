@@ -35,7 +35,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform[] respawns;
     public static int count;
 
-    private GrappleHook grappleHook;
 
     [Header("Animation")]
     private Animator animator;
@@ -59,6 +58,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private bool coyoteTime = false;
     [SerializeField] private float tiempocoyoteTime;
 
+    [Header("Pause Controls")]
+    public bool pause;
+
     private void Start()
     {
         
@@ -74,9 +76,6 @@ public class PlayerMovement : MonoBehaviour
 
         animator = GetComponent<Animator>();
 
-        grappleHook = GetComponent<GrappleHook>();
-
-        
     }
 
     private void Update()
@@ -106,11 +105,18 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("Horizontal", Mathf.Abs(movementHor));
 
-        if ((Input.GetButtonDown("Jump") && coyoteTime) || (Input.GetKeyDown(KeyCode.W) && coyoteTime))
+        if ((Input.GetButtonDown("Jump") && coyoteTime && !pause) || (Input.GetKeyDown(KeyCode.W) && coyoteTime && !pause))
         {
             jump = true;
-             
+
         }
+            else
+            {
+                if(pause)
+                {
+                   jump = false;
+                }
+            }   
 
         if (grounded && releasedShiftInAir)
         {            
@@ -124,7 +130,7 @@ public class PlayerMovement : MonoBehaviour
             this.gameObject.SetActive(false);
             StopRun();
             transform.position = startPoint;
-            grappleHook.ResetGrapple();
+            gh.ResetGrapple();
             Invoke("Delay", 1.5f);
         }
 
@@ -217,7 +223,7 @@ public class PlayerMovement : MonoBehaviour
             this.gameObject.SetActive(false);
             transform.position = startPoint;
             StopRun();
-            grappleHook.ResetGrapple();
+            gh.ResetGrapple();
             Invoke("Delay", 1.5f);
         }
 
@@ -349,7 +355,7 @@ public class PlayerMovement : MonoBehaviour
             this.gameObject.SetActive(false);
             transform.position = startPoint;
             StopRun();
-            grappleHook.ResetGrapple();
+            gh.ResetGrapple();
             Invoke("Delay", 1.5f);
         }
 

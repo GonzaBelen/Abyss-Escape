@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79cb9ecc0d4a6d428ab98a681a33897, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeAreaShownRange: {x: -0.95881534, y: 24.9292}
+  timeAreaShownRange: {x: 18.020897, y: 18.075897}
   trackScale: 1
   playRangeEnabled: 0
-  windowTime: 11.883333333333333
+  windowTime: 18.03333282470703
   verticalScroll: 0
   sequencerHeaderWidth: 315
   m_TimeAreaPlayRange:

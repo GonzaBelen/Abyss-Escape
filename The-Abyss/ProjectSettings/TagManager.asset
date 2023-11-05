@@ -38,6 +38,7 @@ TagManager:
   - End2
   - Box Fairy
   - Finish10
+  - Ground
   layers:
   - Default
   - TransparentFX

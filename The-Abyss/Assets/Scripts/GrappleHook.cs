@@ -7,6 +7,10 @@ public class GrappleHook : MonoBehaviour
     LineRenderer line;
 
     [SerializeField] LayerMask grapplableMask;
+    [SerializeField] LayerMask groundMask;
+
+  
+
     [SerializeField] float maxDistance = 10f;
     [SerializeField] float grappleSpeed = 10f;
     [SerializeField] float grappleShootSpeed = 20f;
@@ -15,14 +19,24 @@ public class GrappleHook : MonoBehaviour
     [HideInInspector] public bool isGrappling = false;
 
     Vector2 target;
+   
+    
+    public bool ViewGround(out RaycastHit hit)
+    {
+        Vector2 direction2 = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        Debug.DrawRay(transform.position, direction2, Color.red);
+        return Physics.Raycast(transform.position, direction2, out hit, maxDistance) && hit.collider.CompareTag("Ground");
+    }
 
     private void Start()
     {
         line = GetComponent<LineRenderer>();
     }
-    
+
     private void Update()
     {
+        
+
         if (Input.GetMouseButtonDown(0) && !isGrappling)
         {
             StartGrapple();
@@ -38,27 +52,29 @@ public class GrappleHook : MonoBehaviour
 
             if (Vector2.Distance(transform.position, target) < 0.5f)
             {
-                retracting = false;
-                isGrappling = false;
-                line.enabled = false;
+                Invoke("ResetGrapple", 0.3f);
             }
         }
+       
     }
 
     private void StartGrapple()
     {
         Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
 
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, maxDistance, grapplableMask);
+        RaycastHit2D hit2D = Physics2D.Raycast(transform.position, direction, maxDistance, grapplableMask);
+        //Debug.DrawRay(transform.position, direction * maxDistance, Color.red);
 
-        if (hit.collider != null) 
+        if (hit2D.collider != null)
         {
+
             isGrappling = true;
-            target = hit.point;
+            target = hit2D.point;
             line.enabled = true;
             line.positionCount = 2;
 
             Grapple();
+
         }
     }
 
