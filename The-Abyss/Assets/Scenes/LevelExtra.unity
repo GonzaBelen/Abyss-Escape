@@ -16600,6 +16600,10 @@ MonoBehaviour:
   grapplableMask:
     serializedVersion: 2
     m_Bits: 64
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 0
+  grappleSound: {fileID: 8300000, guid: df0a6e9aeddfef14299856fbeaaf90b5, type: 3}
   maxDistance: 6
   grappleSpeed: 10
   grappleShootSpeed: 100
@@ -16638,7 +16642,7 @@ MonoBehaviour:
   - {fileID: 657862992}
   - {fileID: 0}
   jumpSound: {fileID: 8300000, guid: 1ea68773bf2612a43952146cc877434e, type: 3}
-  deathSound: {fileID: 8300000, guid: aa40a824cf05eaa458ef70946e2d38ae, type: 3}
+  deathSound: {fileID: 8300000, guid: 4c31156338e815f43a6f86c0996e4400, type: 3}
   keySound: {fileID: 0}
   key2Sound: {fileID: 0}
   Music1: {fileID: 0}
@@ -16647,6 +16651,7 @@ MonoBehaviour:
   timecoyoteTime: 0.1
   coyoteTime: 0
   tiempocoyoteTime: 0
+  pause: 0
 --- !u!114 &711769909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16660,7 +16665,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radioHit: 1.15
-  buttonHit: 101
   rockSound: {fileID: 8300000, guid: 750d22c5e0f0d3842a998856e9423d9a, type: 3}
   pickSound: {fileID: 0}
 --- !u!212 &711769910
@@ -22377,9 +22381,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1760905549}
   - component: {fileID: 1760905548}
-  - component: {fileID: 1760905546}
   - component: {fileID: 1760905545}
   - component: {fileID: 1760905550}
+  - component: {fileID: 1760905546}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -22505,9 +22509,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 97d0dfc5e55e810478f2c7a711f9cf46, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9a1b56f97153f224aa8c1954504e49e5, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.147
+  m_Volume: 0.276
   m_Pitch: 1
   Loop: 1
   Mute: 0

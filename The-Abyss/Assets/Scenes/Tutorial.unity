@@ -10234,6 +10234,7 @@ MonoBehaviour:
   grapplableMask:
     serializedVersion: 2
     m_Bits: 64
+  grappleSound: {fileID: 8300000, guid: df0a6e9aeddfef14299856fbeaaf90b5, type: 3}
   maxDistance: 6
   grappleSpeed: 10
   grappleShootSpeed: 100
@@ -10272,7 +10273,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   jumpSound: {fileID: 8300000, guid: 1ea68773bf2612a43952146cc877434e, type: 3}
-  deathSound: {fileID: 8300000, guid: aa40a824cf05eaa458ef70946e2d38ae, type: 3}
+  deathSound: {fileID: 8300000, guid: 4c31156338e815f43a6f86c0996e4400, type: 3}
   keySound: {fileID: 0}
   key2Sound: {fileID: 0}
   Music1: {fileID: 519420035}
@@ -19841,7 +19842,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2a8d5a5946667a54bb9601e428ba2172, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5ea6a92fbc2d6074db8a166a0e93819c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.14
   m_Pitch: 1

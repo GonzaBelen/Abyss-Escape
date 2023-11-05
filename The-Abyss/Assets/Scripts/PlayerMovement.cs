@@ -131,7 +131,7 @@ public class PlayerMovement : MonoBehaviour
             StopRun();
             transform.position = startPoint;
             gh.ResetGrapple();
-            Invoke("Delay", 1.5f);
+            Invoke("Delay", 1f);
         }
 
         if(!grounded && coyoteTime){
@@ -224,7 +224,7 @@ public class PlayerMovement : MonoBehaviour
             transform.position = startPoint;
             StopRun();
             gh.ResetGrapple();
-            Invoke("Delay", 1.5f);
+            Invoke("Delay", 1f);
         }
 
         if (collider.gameObject.CompareTag("Finish1"))
@@ -356,7 +356,7 @@ public class PlayerMovement : MonoBehaviour
             transform.position = startPoint;
             StopRun();
             gh.ResetGrapple();
-            Invoke("Delay", 1.5f);
+            Invoke("Delay", 1f);
         }
 
         if (collision.gameObject.CompareTag("SecretWall") && canUnlock)

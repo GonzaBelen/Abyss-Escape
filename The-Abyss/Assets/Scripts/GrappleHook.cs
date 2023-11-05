@@ -7,11 +7,11 @@ public class GrappleHook : MonoBehaviour
     LineRenderer line;
 
     [SerializeField] LayerMask grapplableMask;
-    [SerializeField] LayerMask groundMask;
+   
 
-  
+    [SerializeField] private AudioClip grappleSound;
 
-    [SerializeField] float maxDistance = 10f;
+    [SerializeField] float maxDistance = 6f;
     [SerializeField] float grappleSpeed = 10f;
     [SerializeField] float grappleShootSpeed = 20f;
 
@@ -19,14 +19,6 @@ public class GrappleHook : MonoBehaviour
     [HideInInspector] public bool isGrappling = false;
 
     Vector2 target;
-   
-    
-    public bool ViewGround(out RaycastHit hit)
-    {
-        Vector2 direction2 = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        Debug.DrawRay(transform.position, direction2, Color.red);
-        return Physics.Raycast(transform.position, direction2, out hit, maxDistance) && hit.collider.CompareTag("Ground");
-    }
 
     private void Start()
     {
@@ -52,7 +44,7 @@ public class GrappleHook : MonoBehaviour
 
             if (Vector2.Distance(transform.position, target) < 0.5f)
             {
-                Invoke("ResetGrapple", 0.3f);
+                Invoke("ResetGrapple", 0.2f);
             }
         }
        
@@ -67,7 +59,7 @@ public class GrappleHook : MonoBehaviour
 
         if (hit2D.collider != null)
         {
-
+            PlayerSound1.Instance.ExecuteSound(grappleSound);
             isGrappling = true;
             target = hit2D.point;
             line.enabled = true;
@@ -80,6 +72,8 @@ public class GrappleHook : MonoBehaviour
 
     void Grapple()
     {
+        
+
         float t = 0;
         float time = 10;
 
