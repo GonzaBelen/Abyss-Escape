@@ -44,6 +44,7 @@ public class GrappleHook : MonoBehaviour
 
             if (Vector2.Distance(transform.position, target) < 0.5f)
             {
+                //ResetGrapple();
                 Invoke("ResetGrapple", 0.2f);
             }
         }
@@ -57,7 +58,7 @@ public class GrappleHook : MonoBehaviour
         RaycastHit2D hit2D = Physics2D.Raycast(transform.position, direction, maxDistance, grapplableMask);
         //Debug.DrawRay(transform.position, direction * maxDistance, Color.red);
 
-        if (hit2D.collider != null)
+        if (hit2D.collider != null && hit2D.collider.gameObject.layer == LayerMask.NameToLayer("Grapplable"))
         {
             PlayerSound1.Instance.ExecuteSound(grappleSound);
             isGrappling = true;

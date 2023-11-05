@@ -366,6 +366,8 @@
 "Assets/Scripts/PeaceArea.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/PlayerSound1.cs"
+"Assets/Scripts/PositionHookRadio.cs"
+"Assets/Scripts/RangeDetector.cs"
 "Assets/Scripts/Rubys.cs"
 "Assets/Scripts/SecretRooms.cs"
 "Assets/Scripts/SwitchScene.cs"

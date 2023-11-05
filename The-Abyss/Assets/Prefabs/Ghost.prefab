@@ -220,3 +220,6 @@ MonoBehaviour:
   moveRight: 0
   damage: 1
   controlGround: {fileID: 5309914650533256916}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 8

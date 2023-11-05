@@ -189,6 +189,9 @@ MonoBehaviour:
   moveUp: 0
   damage: 1
   controlAir: {fileID: 9072927146390700275}
+  airMask:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &7736806326563471769
 GameObject:
   m_ObjectHideFlags: 0

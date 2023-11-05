@@ -347,9 +347,9 @@ public class PlayerMovement : MonoBehaviour
        
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collider)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collider.gameObject.CompareTag("Enemy"))
         {
             PlayerSound1.Instance.ExecuteSound(deathSound);
             this.gameObject.SetActive(false);
@@ -359,10 +359,10 @@ public class PlayerMovement : MonoBehaviour
             Invoke("Delay", 1f);
         }
 
-        if (collision.gameObject.CompareTag("SecretWall") && canUnlock)
+        if (collider.gameObject.CompareTag("SecretWall") && canUnlock)
         {
             PlayerSound1.Instance.ExecuteSound(key2Sound);
-            collision.gameObject.SetActive(false);
+            collider.gameObject.SetActive(false);
         }    
     }
 

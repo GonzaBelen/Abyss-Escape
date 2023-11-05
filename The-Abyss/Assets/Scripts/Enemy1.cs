@@ -16,6 +16,7 @@ public class Enemy1 : MonoBehaviour
 
     [Header("Ground")]
     [SerializeField] private Transform controlAir;
+    [SerializeField] private LayerMask airMask;
     private bool hasFliped = false;
 
     void Start()
@@ -25,7 +26,7 @@ public class Enemy1 : MonoBehaviour
 
     void FixedUpdate()
     {
-        RaycastHit2D informationAir = Physics2D.Raycast(controlAir.position, Vector2.left, distance);
+        RaycastHit2D informationAir = Physics2D.Raycast(controlAir.position, Vector2.left, distance, airMask);
         rb.velocity = new Vector2(rb.velocity.x, velocity);
 
         if (informationAir == false)

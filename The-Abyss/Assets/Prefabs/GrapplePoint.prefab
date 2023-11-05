@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7035060443679940939}
   - component: {fileID: 3833809445105878637}
   - component: {fileID: 7384146655556628219}
+  - component: {fileID: 8804707727364288938}
   m_Layer: 6
   m_Name: GrapplePoint
   m_TagString: Untagged
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9c955bc8e9a5b3a4a8ab05573e5e3cf1, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7725491, g: 0.63529414, b: 0.18039216, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -120,3 +121,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.16000004
+--- !u!114 &8804707727364288938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577321657895605973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f359275984bab2945bfa78e9f44a103b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalColor: {r: 1, g: 0.94642633, b: 0.7688679, a: 1}
+  normalColor2: {r: 0.7725491, g: 0.63529414, b: 0.18039216, a: 1}

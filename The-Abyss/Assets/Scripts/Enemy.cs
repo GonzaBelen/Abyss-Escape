@@ -15,7 +15,8 @@ public class Enemy : MonoBehaviour
         [SerializeField] private int damage;
 
     [Header("Ground")]
-        [SerializeField] private Transform controlGround; 
+        [SerializeField] private Transform controlGround;
+        [SerializeField] private LayerMask groundMask;
 
     void Start()
     {
@@ -24,7 +25,7 @@ public class Enemy : MonoBehaviour
 
     void FixedUpdate()
     {
-        RaycastHit2D informationGround = Physics2D.Raycast(controlGround.position, Vector2.down, distance);
+        RaycastHit2D informationGround = Physics2D.Raycast(controlGround.position, Vector2.down, distance, groundMask);
         rb.velocity = new Vector2(velocity, rb.velocity.y);
 
         if (informationGround == false)
