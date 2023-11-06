@@ -7622,6 +7622,7 @@ GameObject:
   - component: {fileID: 1044717265}
   - component: {fileID: 1044717264}
   - component: {fileID: 1044717266}
+  - component: {fileID: 1044717267}
   m_Layer: 0
   m_Name: Director
   m_TagString: Untagged
@@ -7682,6 +7683,8 @@ PlayableDirector:
     value: {fileID: 1879757994}
   - key: {fileID: 5678931078815937675, guid: f25a052960bdc80419a11cb81d66c845, type: 2}
     value: {fileID: 1214001310}
+  - key: {fileID: -6312065812982289075, guid: f25a052960bdc80419a11cb81d66c845, type: 2}
+    value: {fileID: 1044717267}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1044717265
@@ -7712,6 +7715,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playableDirector: {fileID: 1044717264}
+--- !u!95 &1044717267
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044717263}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1049915569
 GameObject:
   m_ObjectHideFlags: 0

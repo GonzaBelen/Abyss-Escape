@@ -44,8 +44,8 @@ public class GrappleHook : MonoBehaviour
 
             if (Vector2.Distance(transform.position, target) < 0.5f)
             {
-                //ResetGrapple();
-                Invoke("ResetGrapple", 0.2f);
+                ResetGrapple();
+             
             }
         }
        
