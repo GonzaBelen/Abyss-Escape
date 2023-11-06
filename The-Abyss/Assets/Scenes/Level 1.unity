@@ -1961,6 +1961,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6236732854158808211, guid: e5ec67544b1d3704ebbbba9e219f03d5, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 2ab9010b002fc6f47bdcf164896ed955, type: 2}
+    - target: {fileID: 6410960052554013475, guid: e5ec67544b1d3704ebbbba9e219f03d5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1138826004, guid: b8156b1afda3ad84a9ca5812c2b5c9bd, type: 3}
     - target: {fileID: 7526938028478289008, guid: e5ec67544b1d3704ebbbba9e219f03d5, type: 3}
       propertyPath: moveRight
       value: 1
@@ -21245,6 +21253,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6236732854158808211, guid: e5ec67544b1d3704ebbbba9e219f03d5, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 2ab9010b002fc6f47bdcf164896ed955, type: 2}
+    - target: {fileID: 6410960052554013475, guid: e5ec67544b1d3704ebbbba9e219f03d5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1138826004, guid: b8156b1afda3ad84a9ca5812c2b5c9bd, type: 3}
     - target: {fileID: 7526938028478289008, guid: e5ec67544b1d3704ebbbba9e219f03d5, type: 3}
       propertyPath: velocity
       value: -2
@@ -22037,6 +22053,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6236732854158808211, guid: e5ec67544b1d3704ebbbba9e219f03d5, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 2ab9010b002fc6f47bdcf164896ed955, type: 2}
+    - target: {fileID: 6410960052554013475, guid: e5ec67544b1d3704ebbbba9e219f03d5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1138826004, guid: b8156b1afda3ad84a9ca5812c2b5c9bd, type: 3}
     - target: {fileID: 7958814350620982315, guid: e5ec67544b1d3704ebbbba9e219f03d5, type: 3}
       propertyPath: m_Name
       value: Ghost
