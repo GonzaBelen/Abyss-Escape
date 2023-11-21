@@ -8,10 +8,37 @@ TagManager:
   - Finish2
   - Finish3
   - Finish4
-  - Enemy
   - Box
   - End
-  - Box2
+  - Box Move
+  - Box Jump
+  - Box Run
+  - Box Rock
+  - Box Grapple
+  - Box Rock2
+  - Rock2
+  - AccessRock2
+  - Enemy
+  - Unlock
+  - Unlock2
+  - Finish1
+  - Finish5
+  - Finish6
+  - Finish7
+  - Level1
+  - Finish8
+  - Finish9
+  - Coin
+  - SecretWall
+  - Key
+  - Music1
+  - Music2
+  - Rock3
+  - Rock4
+  - End2
+  - Box Fairy
+  - Finish10
+  - HookRadio
   layers:
   - Default
   - TransparentFX
@@ -20,8 +47,8 @@ TagManager:
   - Water
   - UI
   - Grapplable
-  - 
-  - 
+  - Background
+  - Air
   - 
   - 
   - 
@@ -46,6 +73,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 3280019607
+    locked: 0
+  - name: GrapplePoints
+    uniqueID: 2589056003
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Line
+    uniqueID: 1608624569
+    locked: 0
+  - name: UI
+    uniqueID: 71381497
     locked: 0

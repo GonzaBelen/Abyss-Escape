@@ -1,62 +1,91 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Playables;
 public class Controls : MonoBehaviour
 {
+    [SerializeField] private GameObject[] director;
    
     [SerializeField] private GameObject[] controls;
-    [SerializeField] private bool camera2;
-
+   
     void Start()
     {
-        camera2 = false;
+        
     }
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.A) && controls[0] == true || Input.GetKeyUp(KeyCode.D) && controls[0] == true)
-        {
-            Destroy(controls[0]);
-            controls[1].SetActive(true);
-        }
-
-        if (Input.GetButtonDown("Jump") && controls[1] == true)
-        {
-            Destroy(controls[1]);
-            controls[2].SetActive(true);
-        }
-
-        if (Input.GetKeyDown(KeyCode.LeftShift) && controls[2] == true)
-        {
-            Destroy(controls[2]);
-        }
-
-        if (camera2 == true)
-        {
-            controls[3].SetActive(true);
-            camera2 = false;
-        }
-
-        if (Input.GetKeyDown(KeyCode.E) && controls[3] == true)
-        {
-            Destroy(controls[3]);
-            controls[4].SetActive(true);
-        }
-
+    
 
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.CompareTag("Box"))
+   
+
+        if (collider.gameObject.CompareTag("Box Move"))
         {
-            camera2 = true;
+            director[0].SetActive(true);
+            Destroy(controls[0]);
+            Destroy(collider);
+            
+            //controls[1].SetActive(true);
         }
 
-        if (collider.gameObject.CompareTag("Box2"))
+        if (collider.gameObject.CompareTag("Box Jump"))
         {
+            director[1].SetActive(true);
+            Destroy(director[0]);
+
+            Destroy(controls[1]);
+            Destroy(collider);
+            
+        }
+
+        if (collider.gameObject.CompareTag("Box Run"))
+        {
+            director[2].SetActive(true);
+            Destroy(director[1]);
+
+            Destroy(controls[2]);
+            Destroy(collider);
+
+        }
+
+        if (collider.gameObject.CompareTag("Box Fairy"))
+        {
+            director[5].SetActive(true);
+            Destroy(director[4]);
+
             Destroy(controls[4]);
+            //controls[3].SetActive(true);
+            Destroy(collider);
+        }
+
+        if (collider.gameObject.CompareTag("Box Rock"))
+        {
+            director[3].SetActive(true);
+            Destroy(director[2]);
+
+            Destroy(collider);
+            //controls[4].SetActive(true);
+        }
+
+        if (collider.gameObject.CompareTag("Box Rock2"))
+        {
+
+            controls[3].SetActive(false);
+            Destroy(collider);
+            
+        }
+
+        if (collider.gameObject.CompareTag("Box Grapple"))
+        {
+            director[4].SetActive(true);
+            Destroy(director[3]);
+
+            Destroy(controls[3]);
+            Destroy(collider);
         }
 
     }
